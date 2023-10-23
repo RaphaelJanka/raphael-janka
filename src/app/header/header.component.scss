@@ -1,0 +1,48 @@
+header {
+    padding: 20px 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #141D2F;
+    img {
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+    }
+}
+
+
+.header-links {
+    gap: 32px;
+    position: relative;
+
+    a {
+        color: white;
+        font-size: 23px;
+        text-decoration: none;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            transition: width 0.3s ease-in-out; /* Übergangsdauer und Easing anpassen */
+            background-color: #4B47FF;
+        }
+
+        &:hover {
+            color: #00BEE8;
+
+            &::before {
+                width: 100%;
+            }
+        }
+
+        &:focus {
+            color: white;
+        }
+    }
+}
