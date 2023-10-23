@@ -1,0 +1,83 @@
+section {
+    position: relative;
+    background-image: url('/assets/img/hero-background.png');
+    background-repeat: no-repeat;
+    padding: 15% 0;
+    width: 100%;
+    background-position: -10%;
+    background-size: 650px;
+    margin-top: 50px;
+}
+.hero-container {
+    img {
+        position: absolute;
+        bottom: 92px;
+        width: 32vw;
+        height: auto;
+        left: 80px;
+    }
+}
+.rotate {
+    transform: rotate(-90deg);
+    font-size: 58px;
+    margin-top: 26px;
+}
+.name {
+    font-weight: bold;
+    font-size: 82px;
+    margin-bottom: -20px;
+}
+.mr-100 {
+    margin-right: 100px;
+}
+.front-end {
+    font-size: 51px;
+    color: #4B47FF;
+}
+button {
+    font-size: 23px;
+    background-color: #00BEE8;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    &:hover {
+        background-color: #4B47FF;
+        padding: 16px 30px;
+        box-shadow: 0 0 10px 4px #00BEE8;
+        transition: all 225ms ease-in;
+    }
+    &:active {
+        background-color: white !important;
+        color: black !important;
+        padding: 6px 20px;
+        border: 0;
+    }
+}
+.button-container {
+    height: 100px;
+}
+
+.bow {
+    position: absolute;
+    width: 100vw;
+    top: 32vw;
+}
+
+.separator-atf {
+    width: 100px;
+    height: 4px;
+    background-color: #4B47FF;
+}
+.mail-address {
+    font-size: 23px;
+}
+.link-container {
+    img {
+        filter: drop-shadow(4px 3px 7px #00BEE8);
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+            transition: all 100ms ease-in;
+        }
+    }
+}

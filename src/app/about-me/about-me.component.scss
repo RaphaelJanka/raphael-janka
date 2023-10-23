@@ -1,0 +1,56 @@
+.about-me {
+    margin-left: 100px;
+    z-index: 1;
+    position: relative;
+    margin-top: 160px;
+    h1 {
+        font-size: 90px;
+        margin-bottom: 40px;
+    }
+    p {
+        font-weight: 100;
+    }
+}
+.introduction {
+    max-width: 500px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.puzzle-intro {
+    margin-left: 72px;
+}
+.bulb-intro {
+    margin-left: 85px;
+}
+.hero-profile {
+    width: 300px;
+    height: auto;
+    border-radius: 0%;
+    animation: border-radius-animation 12s infinite linear;
+    box-shadow: 0 0 10px 2px #00BEE8;
+  }
+  
+  @keyframes border-radius-animation {
+    0% {
+      border-radius: 0% 0% 0% 20%;
+    }
+    25% {
+      border-radius: 20% 0% 0% 0%;
+    }
+    50% {
+      border-radius: 0% 20% 0% 0%;
+    }
+    75% {
+      border-radius: 0% 0% 20% 0%;
+    }
+    100% {
+      border-radius: 0% 0% 0% 20%;
+    }
+  }
+.separator-about-me {
+    height: 1px;
+    background-color: #00BEE8;
+    width: 150px;
+    box-shadow: 3px 0px 5px 1px #00BEE8;
+}

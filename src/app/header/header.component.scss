@@ -3,7 +3,8 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    background-color: #141D2F;
+    background-color: #141d2ff0;
+    z-index: 10;
     img {
         width: 70px;
         height: 70px;
@@ -19,6 +20,7 @@ header {
     a {
         color: white;
         font-size: 23px;
+        font-weight: 400;
         text-decoration: none;
         position: relative;
 
@@ -29,7 +31,7 @@ header {
             bottom: -2px;
             height: 2px;
             width: 0;
-            transition: width 0.3s ease-in-out; /* Übergangsdauer und Easing anpassen */
+            transition: width 0.3s ease-in-out;
             background-color: #4B47FF;
         }
 
@@ -41,7 +43,7 @@ header {
             }
         }
 
-        &:focus {
+        &:active {
             color: white;
         }
     }
