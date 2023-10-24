@@ -27,25 +27,25 @@
     width: 300px;
     height: auto;
     border-radius: 0%;
-    animation: border-radius-animation 12s infinite linear;
+    animation: border-radius-animation 18s infinite linear;
     box-shadow: 0 0 10px 2px #00BEE8;
   }
   
   @keyframes border-radius-animation {
     0% {
-      border-radius: 0% 0% 0% 20%;
+      border-radius: 20% 0% 20% 0%;
     }
     25% {
-      border-radius: 20% 0% 0% 0%;
+      border-radius: 0% 20% 0% 20%;
     }
     50% {
-      border-radius: 0% 20% 0% 0%;
+      border-radius: 20% 0% 20% 0%;
     }
     75% {
-      border-radius: 0% 0% 20% 0%;
+      border-radius: 0% 20% 0% 20%;
     }
     100% {
-      border-radius: 0% 0% 0% 20%;
+      border-radius: 20% 0% 20% 0%;
     }
   }
 .separator-about-me {

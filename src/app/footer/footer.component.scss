@@ -1,0 +1,36 @@
+footer {
+    margin-top: 100px;
+    height: 200px;
+    border-top: 2px solid #00BEE8;
+    background-color: #141D2F;
+}
+.footer-content {
+    height: 100%;
+    margin: 0 100px;
+}
+.logo {
+    width: 90px;
+    height: 90px;
+}
+.legal-notice {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: #00BEE8;
+        filter: drop-shadow(4px 3px 7px #00BEE8);
+    }
+}
+.copyright-container {
+    font-size: 23px;
+    margin-left: 10px;
+}
+.link-container {
+    img {
+        filter: drop-shadow(4px 3px 7px #00BEE8);
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+            transition: all 100ms ease-in;
+        }
+    }
+}
