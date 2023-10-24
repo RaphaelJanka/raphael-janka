@@ -1,0 +1,26 @@
+<section>
+    <div class="d-flex justify-content-end">
+        <div class="d-flex align-items-center gap-5">
+            <div class="separator-small"></div>
+            <h2>Portfolio</h2>
+            <div class="separator-large"></div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt">
+        <span class="mr">This page is a sample of my work - please feel free to try them out.</span>
+    </div>
+    <div class="projects-container d-flex flex-wrap justify-content-between">    
+        <div *ngFor="let project of notebooks; let i = index" class="position-relative project-box">
+            <img src="assets/img/{{ project }}" alt="">
+            <div class="position-absolute project-content d-flex flex-column align-items-center justify-content-center row-gap-3">
+                <h3> {{ titles[i] }}</h3>
+                <span class="tech"> {{ tech[i] }}</span>
+                <span>{{ descriptions[i] }}</span>
+                <div class=" d-flex justify-content-center button-container">
+                    <a href="" class="project-button rounded-3">Live Test</a>
+                    <a href="{{ github[i] }}" class="github-button rounded-3">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>

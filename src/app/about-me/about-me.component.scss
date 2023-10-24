@@ -54,3 +54,14 @@
     width: 150px;
     box-shadow: 3px 0px 5px 1px #00BEE8;
 }
+.profile-background {
+  background-image: url('/assets/img/profile-background.svg');
+  z-index: 1;
+  height: 700px;
+  width: 16vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+
+}

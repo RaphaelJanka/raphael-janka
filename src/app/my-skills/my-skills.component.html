@@ -1,0 +1,24 @@
+<section class="my-skills d-flex justify-content-between">
+    <div class="logo-container d-flex flex-wrap">
+        <div *ngFor="let logo of logos; let i = index" class=" logo-boxes d-flex flex-column align-items-center">
+            <img src="assets/img/{{ logo }}" alt="">
+            <span >{{ titles[i] }}</span>
+        </div>
+    </div>
+    <div>
+        <div class="d-flex justify-content-between">
+            <div class="d-flex flex-column align-items-center">
+                <h2>My Skills</h2>
+                <span class="subline">I have grown my frontend developments skills that have allowed
+                    me to create different real projects.
+                </span>
+                <button type="button" class="btn">Get in touch</button>
+            </div>   
+            <div class="separator-skills"></div>
+        </div>
+       
+            
+
+    </div>
+   
+</section>

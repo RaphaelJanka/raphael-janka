@@ -6,12 +6,12 @@ section {
     width: 100%;
     background-position: -10%;
     background-size: 650px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .hero-container {
     img {
         position: absolute;
-        bottom: 92px;
+        bottom: 128px;
         width: 32vw;
         height: auto;
         left: 80px;
@@ -55,6 +55,9 @@ button {
 }
 .button-container {
     height: 100px;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
 }
 
 .bow {

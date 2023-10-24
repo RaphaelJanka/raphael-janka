@@ -1,0 +1,50 @@
+.my-skills {
+    margin-left: 100px;
+    margin-top: 260px;
+    gap: 60px;
+}
+.logo-container {
+    max-width: 500px;
+    gap: 73px;
+    img {
+        width: 55px;
+        height: 60px;
+    }
+}
+.logo-boxes {
+    width: 70px;
+}
+.subline {
+    text-align: center;
+}
+.separator-skills {
+    height: 4px;
+    width: 80px;
+    background-color: #4B47FF;
+    margin-top: 64px;
+}
+h2 {
+    font-size: 90px;
+    font-weight: 700;
+  
+}
+button {
+    font-size: 23px;
+    background-color: #00BEE8;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    &:hover {
+        background-color: #4B47FF;
+        padding: 16px 30px;
+        box-shadow: 0 0 10px 4px #00BEE8;
+        transition: all 225ms ease-in;
+    }
+    &:active {
+        background-color: white !important;
+        color: black !important;
+        padding: 6px 20px;
+        border: 0;
+    }
+}
