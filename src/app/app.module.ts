@@ -9,6 +9,9 @@ import { AtfComponent } from './atf/atf.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,13 +20,17 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AtfComponent,
     AboutMeComponent,
     MySkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

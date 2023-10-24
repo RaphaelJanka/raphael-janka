@@ -1,0 +1,104 @@
+section {
+    margin-top: 160px;
+}
+.separator-contact {
+    width: 50px;
+    height: 4px;
+    background-color: #4B47FF;
+}
+h2 {
+    font-size: 90px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+.contact-container {
+    margin: 80px 100px 0 100px;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+form {
+    width: 617px;
+    gap: 32px;
+    div {
+        width: 100%;
+        
+    }
+    input {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        padding: 0;
+        color: white;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    textarea {
+        color: white;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        padding: 0;
+        height: 232px;
+        resize: none;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    span {
+        font-size: 14px;
+        margin-left: 16px;
+    }
+    a {
+        text-decoration: none;
+    }
+    button {
+        width: 200px;
+        background-color: #00BEE8;
+        color: white;
+        cursor: pointer;
+        border: 0;
+        font-size: 23px;
+        &:hover {
+            width: 220px;
+            background-color: #4B47FF;
+            padding: 16px 30px;
+            box-shadow: 0 0 10px 4px #00BEE8;
+            transition: all 225ms ease-in;
+        }
+        &:disabled {
+            background-color: grey;
+        }
+        &:active {
+            background-color: white !important;
+            color: black !important;
+            padding: 6px 20px;
+        }
+    }
+}
+.div-border {
+    border: 2px solid #4B47FF;
+    padding: 0 24px;
+    gap: 16px;
+}
+.div-input {
+    height: 50px;
+}
+.div-textarea {
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.div-checkbox {
+    padding-left: 16px;
+}
+.hidden {
+    visibility: hidden;
+}

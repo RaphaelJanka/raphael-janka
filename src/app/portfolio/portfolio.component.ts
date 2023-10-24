@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
   notebooks = [
-    'laptop.jpg',
+    'laptop.png',
     'laptop.jpg',
     'laptop.jpg',
     'laptop.jpg',
