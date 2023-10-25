@@ -163,7 +163,7 @@ button {
 
 @media (max-width: 800px) {
     section {
-        background-size: 66vw;
+        background-size: 75vw;
         
     }
     .hero-container {
@@ -204,6 +204,9 @@ button {
     button {
         font-size: 16px;
         margin-left: 33px;
+    }
+    section {
+        background-size: 83vw;
     }
 }
 @media (max-width: 550px) {
@@ -252,6 +255,16 @@ button {
     .link-container {
         gap: 2.5rem;
     }
+    .hero-container {
+        img {
+            width: 48vw;
+            left: 27vw;
+        }
+    }
+    section {
+        margin-top: 14vh;
+        background-size: 102vw;
+    }
 }
 
 @media (max-width: 360px) {
@@ -262,7 +275,6 @@ button {
 @media (max-width: 340px) {
     section {
         padding: 13% 0;
-        margin-top: 3vh;
     }
     .name {
         font-size: 36px;

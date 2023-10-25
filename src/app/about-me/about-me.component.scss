@@ -2,7 +2,7 @@
     margin-left: 100px;
     z-index: 1;
     position: relative;
-    margin-top: 160px;
+    margin-top: 200px;
     h1 {
         font-size: 90px;
         margin-bottom: 40px;
@@ -75,11 +75,7 @@
     max-width: 400px;
   }
 }
-@media (max-width: 1000px) {
-  .hero-profile {
-    width: 240px;
-  }
-}
+
 @media (max-width: 980px) {
   .about-me {
     margin-top: 400px;
@@ -87,13 +83,11 @@
   .separator-about-me {
     width: 100px;
   }
-}
-@media (max-width: 900px) {
   .profile-container {
     display: none;
   }
   .introduction {
-    max-width: 538px;
+    max-width: 100%;
     margin-right: 100px;
   }
   .profile-background {
@@ -101,6 +95,7 @@
     top: -300px
   }
 }
+
 @media (max-width: 750px) {
   .about-me {
     margin-left: 50px;
