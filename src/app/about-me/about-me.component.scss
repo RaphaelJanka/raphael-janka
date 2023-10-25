@@ -6,6 +6,7 @@
     h1 {
         font-size: 90px;
         margin-bottom: 40px;
+        font-weight: 700;
     }
     p {
         font-weight: 100;
@@ -22,6 +23,9 @@
 }
 .bulb-intro {
     margin-left: 85px;
+}
+.profile-container {
+  display: flex;
 }
 .hero-profile {
     width: 300px;
@@ -58,10 +62,89 @@
   background-image: url('/assets/img/profile-background.svg');
   z-index: 1;
   height: 700px;
-  width: 16vw;
+  width: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
   right: 0;
   top: 0;
 
+}
+
+@media (max-width: 1100px) {
+  .introduction {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-profile {
+    width: 240px;
+  }
+}
+@media (max-width: 980px) {
+  .about-me {
+    margin-top: 400px;
+  }
+  .separator-about-me {
+    width: 100px;
+  }
+}
+@media (max-width: 900px) {
+  .profile-container {
+    display: none;
+  }
+  .introduction {
+    max-width: 538px;
+    margin-right: 100px;
+  }
+  .profile-background {
+    width: 25vh;
+    top: -300px
+  }
+}
+@media (max-width: 750px) {
+  .about-me {
+    margin-left: 50px;
+    margin-top: 340px;
+    h1 {
+      font-size: 64px;
+    }
+  }
+  .introduction {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .about-me {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  .bulb-intro {
+    margin-left: 65px;
+  }
+  .puzzle-intro {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .about-me {
+    margin-top: 260px;
+    margin-left: 25px;
+    h1 {
+      font-size: 39px;
+    }
+  }
+  .introduction {
+    margin-right: 25px;
+  }
+  .profile-background {
+    width: 19vh;
+  }
+}
+@media (max-width: 450px) {
+  .about-me {
+    h1 {
+      font-size: 36px;
+    }
+  }
 }
