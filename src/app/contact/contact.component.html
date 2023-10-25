@@ -4,7 +4,7 @@
         <h2>Contact</h2>
     </div>
     <div class="d-flex justify-content-between contact-container">
-        <div>
+        <div class="contact-subttitle-container">
             <h3>Got a problem to solve?</h3>
             <p>Contact me through this form, I am interested in hearing you, <br>
                 knowing your ideas and contributing to your projects with my work.
@@ -13,11 +13,11 @@
         </div>
         <form (submit)="sendMail()" #myForm class="d-flex align-items-center flex-column">
             <div class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
-                <input #name type="text" placeholder="Your name" class="flex-grow-1" name="name">
+                <input #name type="text" placeholder="Your name" class="input-fields flex-grow-1" name="name">
                 <img id="name-img" src="assets/img/check.svg" class="hidden">
             </div>
             <div class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
-                <input #mail type="email" placeholder="Your e-mail" class="flex-grow-1">
+                <input #mail type="email" placeholder="Your e-mail" class="input-fields flex-grow-1">
                 <img id="mail-img" src="assets/img/check.svg" class="hidden">
             </div>
             <div class="d-flex justify-content-between div-border rounded-3 div-textarea align-items-start">
