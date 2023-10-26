@@ -1,5 +1,6 @@
 section {
     margin-top: 160px;
+    scroll-margin-top: 150px;
 }
 
 .separator-small {
@@ -105,9 +106,28 @@ a {
     }
 }
 
+.portfolio-background-1 {
+    left: 0;
+    top: 413px;
+    height: auto;
+    width: 366px;
+    z-index: -1;
+}
+.portfolio-background-2 {
+    right: 0;
+    bottom: -315px;
+    height: auto;
+    width: 265px;
+    z-index: -1;
+}
+
+
 @media (max-width: 1200px) {
     .separator-large {
         width: 350px;
+    }
+    .portfolio-background-1 {
+        top: 83vw;
     }
 }
 

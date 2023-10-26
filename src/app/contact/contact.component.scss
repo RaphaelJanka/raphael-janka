@@ -91,6 +91,7 @@ form {
     border: 2px solid #4B47FF;
     padding: 0 24px;
     gap: 16px;
+    background-color: #141D2F;
 }
 .div-input {
     height: 50px;
@@ -106,7 +107,16 @@ form {
 .hidden {
     visibility: hidden;
 }
-
+#contact {
+    scroll-margin-top: 150px;
+}
+.footer-background {
+    left: 0;
+    height: auto;
+    width: 455px;
+    z-index: -1;
+    top: 406px;
+}
 @media (max-width: 980px) {
     .contact-container {
         flex-direction: column;
@@ -115,6 +125,10 @@ form {
     h2 {
         font-size: 64px;
         margin-left: 16px;
+    }
+    .footer-background {
+        width: 230px;
+        top: 876px;
     }
 }
 @media (max-width: 750px) {

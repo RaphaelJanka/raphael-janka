@@ -2,6 +2,7 @@
     margin-left: 100px;
     margin-top: 260px;
     gap: 60px;
+    scroll-margin-top: 150px;
 }
 .logo-container {
     max-width: 500px;
@@ -49,6 +50,20 @@ button {
         border: 0;
     }
 }
+.background-skills {
+    background-image: url('/assets/img/background-skills.svg');
+    z-index: -1;
+    height: 564px;
+    width: 495px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -364px;
+    top: -5px;
+    rotate: 296deg;
+    background-position-x: -32px;
+    background-position-y: -24px;
+}
+
 .second-responsive {
     display: none;
     width: 200px;
