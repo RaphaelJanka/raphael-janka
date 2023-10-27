@@ -5,10 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full' },
-  {path: 'home', component: HomeComponent },
-  {path: 'privacy-policy', component: PrivacyPolicyComponent },
-  {path: 'legal-notice', component: LegalNoticeComponent },
+  {path: '', component: HomeComponent},
+  {path: 'privacy-policy', component: PrivacyPolicyComponent},
+  {path: 'legal-notice', component: LegalNoticeComponent},
 ];
 
 @NgModule({

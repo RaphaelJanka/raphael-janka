@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,4 +10,12 @@ import { Component } from '@angular/core';
     <app-contact></app-contact>
   `,
 })
-export class HomeComponent {}
+export class HomeComponent implements OnInit {
+
+  ngOnInit(): void {
+    this.scrollToTop();
+  }
+  scrollToTop() {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  }
+}

@@ -1,34 +1,46 @@
 section {
     margin-top: 160px;
 }
+
+
 .separator-contact {
-    width: 50px;
-    height: 4px;
+    width: 100px;
+    height: 8px;
     background-color: #4B47FF;
 }
+
+
 h2 {
-    font-size: 90px;
+    font-size: 120px;
     font-weight: 700;
     margin-left: 50px;
 }
+
+
 .contact-container {
-    margin: 80px 100px 0 100px;
+    margin: 80px 160px 0 160px;
     gap: 64px;
 }
+
+
 h3 {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 32px;
 }
+
+
 .contact-subttitle-container {
-    max-width: 460px;
+    max-width: 760px;
+    font-size: 28px;
 }
+
+
 form {
     max-width: 617px;
     gap: 32px;
     div {
         width: 100%;
-        
     }
     input {
         background-color: transparent;
@@ -36,8 +48,10 @@ form {
         outline: none;
         padding: 0;
         color: white;
+        font-size: 23px;
         &::placeholder {
             color: rgba(255, 255, 255, 0.8);
+            font-size: 23px;
         }
     }
     textarea {
@@ -48,8 +62,10 @@ form {
         padding: 0;
         height: 232px;
         resize: none;
+        font-size: 23px;
         &::placeholder {
             color: rgba(255, 255, 255, 0.8);
+            font-size: 23px;
         }
 
         &::-webkit-scrollbar {
@@ -57,23 +73,23 @@ form {
         }
     }
     span {
-        font-size: 14px;
+        font-size: 20px;
         margin-left: 16px;
     }
     a {
         text-decoration: none;
     }
     button {
-        width: 200px;
         background-color: #00BEE8;
         color: white;
         cursor: pointer;
         border: 0;
-        font-size: 23px;
+        font-size: 40px;
+        padding: 8px 32px 16px 32px;
+        border-radius: 10px;
         &:hover {
-            width: 220px;
             background-color: #4B47FF;
-            padding: 16px 30px;
+            padding: 14px 44px 22px 44px;
             box-shadow: 0 0 10px 4px #00BEE8;
             transition: all 225ms ease-in;
         }
@@ -83,75 +99,56 @@ form {
         &:active {
             background-color: white !important;
             color: black !important;
-            padding: 6px 20px;
+            padding: 8px 32px 16px 32px;
         }
     }
 }
+
+
 .div-border {
     border: 2px solid #4B47FF;
     padding: 0 24px;
     gap: 16px;
     background-color: #141D2F;
 }
+
+
 .div-input {
-    height: 50px;
+    height: 80px;
 }
+
+
 .div-textarea {
     padding-top: 12px;
     padding-bottom: 10px;
 }
 
+
 .div-checkbox {
     padding-left: 16px;
 }
+
+
 .hidden {
     visibility: hidden;
 }
+
+
 #contact {
     scroll-margin-top: 150px;
 }
+
+
 .footer-background {
     left: 0;
     height: auto;
-    width: 455px;
+    width: 540px;
     z-index: -1;
-    top: 406px;
+    top: 455px;
 }
-@media (max-width: 980px) {
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    h2 {
-        font-size: 64px;
-        margin-left: 16px;
-    }
-    .footer-background {
-        width: 230px;
-        top: 876px;
-    }
-}
-@media (max-width: 750px) {
-    .contact-container {
-        margin: 80px 50px 0 50px;
-    }
-}
-@media (max-width: 600px) {
-    h2 {
-        font-size: 50px;
-    }
-}
-@media (max-width: 450px) {
-    .contact-container {
-        margin: 80px 25px 0 25px;
-    }
-    .input-fields {
-        width: 130px;
-    }
-    textarea {
-        width: 100px;
-    }
-    h2 {
-        font-size: 36px;
-    }
+
+
+.checkbox {
+    width: 16px;
+    height: 16px;
 }

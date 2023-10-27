@@ -5,54 +5,68 @@ section {
     padding: 15% 0;
     width: 100%;
     background-position: -10%;
-    background-size: 650px;
+    background-size: 50vw;
     margin-top: 100px;
 }
+
+
 .hero-container {
     img {
         position: absolute;
-        bottom: 128px;
-        width: 32vw;
+        bottom: 2.5vw;
+        width: 31vw;
         height: auto;
         left: 80px;
     }
 }
+
+
 .rotate {
     transform: rotate(-90deg);
-    font-size: 58px;
-    margin-top: 26px;
+    font-size: 84px;
+    margin-top: 31px;
 }
+
+
 .name {
     font-weight: bold;
-    font-size: 82px;
+    font-size: 120px;
     margin-bottom: -20px;
 }
+
+
 .mr-100 {
-    margin-right: 100px;
+    margin-right: 160px;
 }
+
+
 .front-end {
-    font-size: 51px;
+    font-size: 76px;
     color: #4B47FF;
 }
+
+
 button {
-    font-size: 23px;
+    font-size: 40px;
     background-color: #00BEE8;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 8px 32px 16px 32px;
+    border-radius: 10px;
     &:hover {
+        padding: 14px 44px 22px 44px;
         background-color: #4B47FF;
-        padding: 16px 30px;
         box-shadow: 0 0 10px 4px #00BEE8;
         transition: all 225ms ease-in;
     }
     &:active {
         background-color: white !important;
         color: black !important;
-        padding: 6px 20px;
+        padding: 8px 32px 16px 32px;
         border: 0;
     }
 }
+
+
 .button-container {
     height: 100px;
     position: relative;
@@ -60,231 +74,41 @@ button {
     margin-top: 40px;
 }
 
+
 .bow {
     position: absolute;
     width: 100vw;
     top: 32vw;
 }
 
+
+.info-container {
+    gap: 80px
+}
+
+
 .separator-atf {
-    width: 100px;
-    height: 4px;
+    width: 300px;
+    height: 8px;
     background-color: #4B47FF;
 }
+
+
 .mail-address {
-    font-size: 23px;
+    font-size: 32px;
 }
+
+
 .link-container {
-    gap: 3rem;
+    gap: 5rem;
     img {
+        height: 60px;
+        width: 60px;
         filter: drop-shadow(4px 3px 7px #00BEE8);
         &:hover {
             cursor: pointer;
             transform: scale(1.5);
             transition: all 100ms ease-in;
         }
-    }
-}
-
-@media (max-width: 1200px) {
-    .name {
-        font-size: 74px;
-    }
-    .front-end {
-        font-size: 47px;
-    }
-    .rotate {
-        font-size: 52px;
-    }
-}
-@media (max-width: 1100px) {
-    section {
-        background-size: 500px;
-    }
-    .name {
-        font-size: 67px;
-    }
-    .front-end {
-        font-size: 43px;
-    }
-    .rotate {
-        font-size: 48px;
-    }
-}
-@media (max-width: 1000px) {
-    section {
-        margin-top: 100px;
-    }
-    .name {
-        font-size: 64px;
-    }
-    .front-end {
-        font-size: 40px;
-    }
-    .rotate {
-        font-size: 43px;
-        margin-top: 17px;
-    }
-}
-@media (max-width: 980px) {
-    section {
-        margin-top: 19vh;
-        background-size: 70vw;
-        background-position: 53%;
-    }
-    .hero-container {
-        height: 276px;
-        img {
-            width: 37vw;
-            left: 32vw;
-        }
-    }
-    .introduction-container-responsive {
-        position: absolute;
-        bottom: -148px;
-        z-index: 1;
-        width: 100vw;
-    }
-    .introduction-content-responsive {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .mr-100 {
-        margin-right: 0;
-    }
-    .link-buttons-responsive {
-        margin-top: 178px;
-    }
-    button {
-        margin-left: 56px;
-    }
-    
-}
-
-@media (max-width: 800px) {
-    section {
-        background-size: 75vw;
-        
-    }
-    .hero-container {
-        height: 276px;
-        img {
-            width: 40vw;
-            left: 30vw;
-        }
-    }
-    .bow {
-        top: 35vw;
-    }
-}
-
-@media (max-width: 700px) {
-    .bow {
-        top: 38vw;
-    }
-    .mail-address {
-        display: none;
-    }
-}
-@media (max-width: 600px) {
-    .bow {
-        top: 41vw;
-    }
-    .name {
-        font-size: 50px;
-        margin-bottom: -16px;
-    }
-    .front-end {
-        font-size: 32px;
-    }
-    .rotate {
-        font-size: 32px;
-        margin-top: 13px;
-    }
-    button {
-        font-size: 16px;
-        margin-left: 33px;
-    }
-    section {
-        background-size: 83vw;
-    }
-}
-@media (max-width: 550px) {
-    .bow {
-        top: 44vw;
-    }
-    section {
-        margin-top: 9vh;
-    }
-}
-@media (max-width: 450px) {
-    .bow {
-        top: 49vw;
-    }
-    .name {
-        font-size: 39px;
-        margin-bottom: -13px;
-    }
-    .front-end {
-        font-size: 25px;
-    }
-    .rotate {
-        font-size: 25px;
-        margin-top: 13px;
-    }
-    .introduction-container-responsive {
-        bottom: -90px;
-    }
-    section {
-        margin-top: 6vh;
-    }
-    .button-container {
-        margin-top: 24px;
-    }
-    .link-buttons-responsive {
-        margin-top: 96px;
-    }
-}
-@media (max-width: 400px) {
-    .bow {
-        top: 53vw;
-    }
-    .separator-atf {
-        width: 56px;
-    }
-    .link-container {
-        gap: 2.5rem;
-    }
-    .hero-container {
-        img {
-            width: 48vw;
-            left: 27vw;
-        }
-    }
-    section {
-        margin-top: 14vh;
-        background-size: 102vw;
-    }
-}
-
-@media (max-width: 360px) {
-    .bow {
-        top: 56vw;
-    }
-}
-@media (max-width: 340px) {
-    section {
-        padding: 13% 0;
-    }
-    .name {
-        font-size: 36px;
-        margin-bottom: -10px;
-    }
-    .front-end {
-        font-size: 23px;
-    }
-    .rotate {
-        font-size: 23px;
-        margin-top: 8px;
     }
 }

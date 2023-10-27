@@ -4,7 +4,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss', 'contact.component.media-query.scss']
 })
 export class ContactComponent {
   @ViewChild('myForm') myForm!: ElementRef;

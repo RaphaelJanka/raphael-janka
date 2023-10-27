@@ -1,13 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss', 'header.component.media-query.scss']
 })
-export class HeaderComponent {
-
-  scrollToTop() {
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-  }
-}
+export class HeaderComponent { }

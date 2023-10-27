@@ -3,38 +3,51 @@ section {
     scroll-margin-top: 150px;
 }
 
+
 .separator-small {
-    height: 4px;
-    width: 104px;
+    height: 8px;
+    width: 204px;
     background-color: #4B47FF;
 }
+
+
 .separator-large {
-    height: 4px;
-    width: 484px;
+    height: 8px;
+    width: 33vw;
     background-color: #4B47FF;
 }
+
+
 .title-container {
     gap: 3rem;
 }
+
+
 h2 {
-    font-size: 90px;
+    font-size: 120px;
     font-weight: 700;
 }
+
 
 .subtitle-container {
     margin-top: 24px;
     padding: 0 100px;
     text-align: center;
+    font-size: 28px;
 }
+
+
 .projects-container {
-    margin: 160px 100px 0 100px;
-    gap: 100px;
+    margin: 160px 160px 0 160px;
+    gap: 120px;
     img {
-        width: 450px;
+        width: 600px;
         height: auto;
         border-radius: 10px;
     }
 }
+
+
 .project-box {
     border-radius: 10px;
     box-shadow: 0 0 10px 1px #00BEE8;
@@ -45,6 +58,8 @@ h2 {
         transition: all 225ms ease-out;
     }
 }
+
+
 .project-content {
     top: 0;
     left: 0;
@@ -62,43 +77,55 @@ h2 {
     }
 }
 
+
 h3 {
-    font-size: 32px;
+    font-size: 48px;
 }
+
 
 .tech {
     color: #00BEE8;
+    font-size: 32px;
+}
+
+
+.description {
     font-size: 23px;
 }
+
+
 .button-container {
     width: 100%;
     column-gap: 80px;
     margin-top: 12px;
 }
+
+
 a {
     text-decoration: none;
     color: white;
-    height: 40px;
-    font-size: 23px;
-    width: 140px;
+    font-size: 28px;
+    width: 170px;
+    height: 50px;
     &:active {
         background-color: white !important;
         color: black;
     }
 }
+
+
 .project-button {
     background-color: #00BEE8;
-    padding: 0 10px;
     &:hover {
         background-color: #4B47FF;
         box-shadow: 0 0 10px 4px #00BEE8;
         transition: all 100ms ease-in;
     }
 }
-.github-button {
-    padding: 0 10px;
-    border: 1px solid #00BEE8;
 
+
+.github-button {
+    border: 1px solid #00BEE8;
     &:hover {
         background-color: #00BEE8;
         box-shadow: 0 0 10px 4px #4B47FF;
@@ -106,148 +133,20 @@ a {
     }
 }
 
+
 .portfolio-background-1 {
     left: 0;
-    top: 413px;
+    top: 525px;
     height: auto;
-    width: 366px;
+    width: 26vw;
     z-index: -1;
 }
+
+
 .portfolio-background-2 {
     right: 0;
     bottom: -315px;
     height: auto;
     width: 265px;
     z-index: -1;
-}
-
-
-@media (max-width: 1200px) {
-    .separator-large {
-        width: 350px;
-    }
-    .portfolio-background-1 {
-        top: 83vw;
-    }
-}
-
-@media (max-width: 1000px) {
-    .separator-large {
-        width: 200px;
-    }
-}
-@media (max-width: 980px) {
-    .separator-small {
-        width: 56px;
-    }
-    .separator-large {
-        width: 140px;
-    }
-    h2 {
-        font-size: 64px;
-    }
-    .title-container {
-        gap: 3vw;
-    }
-}
-@media (max-width: 750px) {
-    h2 {
-        font-size: 64px;
-    }
-    .subtitle-container {
-        padding: 0 50px;
-    }
-    .projects-container {
-        margin: 20vw 50px 0 50px;
-    }
-}
-@media (max-width: 600px) {
-    h2 {
-        font-size: 50px;
-    }
-    .separator-small {
-        width: 32px;
-    }
-    .separator-large {
-        width: 96px;
-    }
-    .projects-container {
-        img {
-            width: 70vw;
-        }
-    }
-    a {
-        height: 36px;
-        font-size: 18px;
-        width: 112px;
-    }
-    h3 {
-        font-size: 28px;
-    }
-    .tech {
-        font-size: 18px;
-    }
-    .description-responsive {
-        font-size: 14px;
-    }
-    .project-content {
-        row-gap: 5px !important;
-    }
-    .github-button {
-        padding: 0 5px;
-    }
-    .project-button {
-        padding: 0 5px;
-    }
-}
-@media (max-width: 500px) {
-    a {
-        height: 30px;
-        font-size: 15px;
-        width: 112px;
-    }
-    h3 {
-        font-size: 28px;
-        margin-bottom: 0;
-    }
-    .tech {
-        font-size: 14px;
-    }
-    .description-responsive {
-        font-size: 10px;
-    }
-}
-@media (max-width: 450px) {
-    h2 {
-        font-size: 36px;
-    }
-    .separator-large {
-        width: 80px;
-    }
-    .subtitle-container {
-        padding: 0 25px;
-    }
-    .projects-container {
-        margin: 30vw 25px 0 25px;
-    }
-}
-@media (max-width: 400px) {
-    a {
-        height: 25px;
-        font-size: 11px;
-        width: 112px;
-    }
-    h3 {
-        font-size: 20px;
-    }
-    .tech {
-        font-size: 10px;
-    }
-    .description-responsive {
-        font-size: 9px;
-    }
-    .button-container {
-        margin-top: 8px;
-    }
-    
 }

@@ -1,0 +1,62 @@
+section {
+    margin: 200px 160px 0 160px;
+}
+
+
+hr {
+    color: #00BEE8;
+    margin-top: 40px;
+    opacity: 100;
+}
+
+
+li {
+    font-size: 28px;
+    font-weight: 100;
+    &::marker {
+        color: #00BEE8;
+    }
+}
+
+
+.name {
+    color: #00BEE8;
+    font-weight: 700;
+}
+
+
+.mail {
+    color: #00BEE8;
+    font-weight: 700;
+}
+
+
+a {
+    color: #00BEE8;
+    &:hover {
+        filter: drop-shadow(4px 3px 7px #4B47FF);
+    }
+}
+
+
+h1 {
+    font-size: 120px;
+    margin-bottom: 56px;
+}
+
+
+h2 {
+    font-size: 56px;
+    margin: 24px 0;
+}
+
+
+h3 {
+    font-size: 40px;
+}
+
+
+p {
+    font-size: 28px;
+    font-weight: 100;
+}
