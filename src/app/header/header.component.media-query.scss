@@ -15,10 +15,8 @@
             height: 100px;
         }
     }
-    .header-links {
-        a {
-            font-size: 32px;
-        }
+    a {
+        font-size: 32px;
     }
 }
 
@@ -37,10 +35,8 @@
             height: 70px;
         }
     }
-    .header-links {
-        a {
-            font-size: 23px;
-        }
+    a {
+        font-size: 23px;
     }
 }
 
@@ -55,9 +51,9 @@
 @media (max-width: 650px) {
     .header-links {
         gap: 16px;
-        a{
-            font-size: 20px;
-        }
+    }
+    a{
+        font-size: 20px;
     }
 }
 

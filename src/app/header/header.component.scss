@@ -17,44 +17,43 @@ header {
     gap: 56px;
     position: relative;
     display: flex;
-    a {
-        color: white;
-        font-size: 40px;
-        font-weight: 400;
-        text-decoration: none;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            height: 2px;
-            width: 0;
-            transition: width 0.3s ease-in-out;
-            background-color: #4B47FF;
-        }
-
-        &:hover {
-            color: #00BEE8;
-
-            &::before {
-                width: 100%;
-            }
-        }
-
-        &:active {
-            color: white;
-        }
-    }
 }
 
+a {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 0;
+        transition: width 0.3s ease-in-out;
+        background-color: #4B47FF;
+    }
+
+    &:hover {
+        color: #00BEE8;
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &:active {
+        color: white;
+    }
+}
 
 .burger-menu-container {
     width: 56px;
     height: 56px;
     border-radius: 100%;
     display: none;
+    cursor: pointer;
     &:hover {
         border: 2px solid #00BEE8;
         box-shadow: 0 0 10px 4px #00BEE8;
@@ -64,3 +63,51 @@ header {
         height: 27px;
     }
 }
+
+.button-highlighted {
+    border: 2px solid #00BEE8;
+    box-shadow: 0 0 10px 4px #00BEE8;
+}
+
+.sidebar {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    visibility: hidden;
+    background-color: #414856;
+    transform: translateX(550px);
+}
+
+.sidebar-visible {
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 225ms ease-in;
+}
+.sidebar-hidden {
+    visibility: hidden;
+    transform: translateX(550px);
+    transition: all 225ms ease-out;
+}
+
+.link-highlighted {
+    color: #00BEE8;
+    &::before {
+        width: 100%;
+    }
+}
+
+
+.colorLinks {
+    color: #00BEE8;
+  }
+
+
+

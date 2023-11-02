@@ -13,6 +13,9 @@
     img {
         width: 65px;
         height: 70px;
+        &:hover {
+            animation: bounce 0.5s ease;
+        }
     }
 }
 
@@ -85,4 +88,17 @@ button {
 .second-responsive {
     display: none;
     margin-right: 100px;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Ursprüngliche Position */
+    }
+    40% {
+        transform: translateY(-20px); /* Hoch bewegen */
+    }
+    60% {
+        transform: translateY(-10px); /* Zurück nach unten bewegen */
+    }
 }

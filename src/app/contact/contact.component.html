@@ -11,21 +11,21 @@
             </p>
             <p>Need a Frontend developer? <b>Contact me!</b></p>
         </div>
-        <form (submit)="sendMail()" #myForm class="d-flex align-items-center flex-column">
+        <form (submit)="sendMail()" #myForm ngNativeValidate class="d-flex align-items-center flex-column">
             <div class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
-                <input #name type="text" placeholder="Your name" class="input-fields flex-grow-1" name="name">
+                <input required #name type="text" placeholder="Your name" class="input-fields flex-grow-1" name="name">
                 <img id="name-img" src="assets/img/check.svg" class="hidden">
             </div>
             <div class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
-                <input #mail type="email" placeholder="Your e-mail" class="input-fields flex-grow-1">
+                <input required #mail type="email" placeholder="Your e-mail" class="input-fields flex-grow-1">
                 <img id="mail-img" src="assets/img/check.svg" class="hidden">
             </div>
             <div class="d-flex justify-content-between div-border rounded-3 div-textarea align-items-start">
-                <textarea #message name="message" cols="30" rows="10" class="flex-grow-1" placeholder="Your message"></textarea>
+                <textarea required #message name="message" cols="30" rows="10" class="flex-grow-1" placeholder="Your message"></textarea>
                 <img id="message-img" src="assets/img/check.svg" class="hidden">
             </div>    
             <div class="d-flex align-items-center div-checkbox">
-                <input #checkbox class="checkbox" type="checkbox">
+                <input required #checkbox class="checkbox" type="checkbox">
                 <span>I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</span>
             </div>
             <button #sendButton type="submit" class="btn" disabled>Send message</button>

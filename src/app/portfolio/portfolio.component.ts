@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
   notebooks = [
-    'laptop.png',
-    'laptop.jpg',
-    'laptop.jpg',
-    'laptop.jpg',
+    'join.png',
+    'sharkie.png',
+    'pokedex.png',
+    'ring-of-fire.png',
   ];
   titles = [
     'Join',
@@ -35,7 +35,7 @@ export class PortfolioComponent {
   github = [
     'https://github.com/RaphaelJanka/join',
     'https://github.com/RaphaelJanka/Sharkie',
-    'https://github.com/RaphaelJanka/pokédex',
+    'https://github.com/RaphaelJanka/pokedex',
     'https://github.com/RaphaelJanka/ringoffire',
   ];
 
