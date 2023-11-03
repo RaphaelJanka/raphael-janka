@@ -75,6 +75,10 @@ h2 {
         opacity: 100;
         transition: all 225ms ease-in-out;
     }
+    &:active {
+        opacity: 100;
+        transition: all 225ms ease-in-out;
+    }
 }
 
 

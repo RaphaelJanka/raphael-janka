@@ -19,6 +19,7 @@ header {
     display: flex;
 }
 
+
 a {
     color: white;
     font-size: 40px;
@@ -35,18 +36,11 @@ a {
         transition: width 0.3s ease-in-out;
         background-color: #4B47FF;
     }
-
-    &:hover {
-        color: #00BEE8;
-        &::before {
-            width: 100%;
-        }
-    }
-
     &:active {
-        color: white;
+        color: #00BEE8;
     }
 }
+
 
 .burger-menu-container {
     width: 56px;
@@ -54,19 +48,16 @@ a {
     border-radius: 100%;
     display: none;
     cursor: pointer;
-    &:hover {
-        border: 2px solid #00BEE8;
-        box-shadow: 0 0 10px 4px #00BEE8;
-        transition: border 100ms ease-in-out;
-    }
     img {
         height: 27px;
     }
 }
 
+
 .button-highlighted {
     border: 2px solid #00BEE8;
     box-shadow: 0 0 10px 4px #00BEE8;
+    transition: border 100ms ease-in-out;
 }
 
 .sidebar {
@@ -86,16 +77,20 @@ a {
     transform: translateX(550px);
 }
 
+
 .sidebar-visible {
     visibility: visible;
     transform: translateX(0);
     transition: all 225ms ease-in;
 }
+
+
 .sidebar-hidden {
     visibility: hidden;
     transform: translateX(550px);
     transition: all 225ms ease-out;
 }
+
 
 .link-highlighted {
     color: #00BEE8;
@@ -103,11 +98,3 @@ a {
         width: 100%;
     }
 }
-
-
-.colorLinks {
-    color: #00BEE8;
-  }
-
-
-

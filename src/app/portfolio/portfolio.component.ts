@@ -40,6 +40,9 @@ export class PortfolioComponent {
   ];
 
   projectLinks = [
-
+    'https://raphael-janka.com/Join/html/login.html',
+    'https://raphael-janka.com/sharkie/index.html',
+    'https://raphael-janka.com/pokedex/html/index.html',
+    'https://raphael-janka.com/ringoffire/index.html',
   ];
 }

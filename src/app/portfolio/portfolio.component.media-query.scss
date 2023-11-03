@@ -97,15 +97,6 @@
 
 
 @media (max-width: 980px) {
-    .separator-small {
-        width: 56px;
-    }
-    .separator-large {
-        width: 140px;
-    }
-    h2 {
-        font-size: 64px;
-    }
     .title-container {
         gap: 3vw;
     }
@@ -116,6 +107,12 @@
 
 
 @media (max-width: 750px) {
+    .separator-small {
+        width: 56px;
+    }
+    .separator-large {
+        width: 140px;
+    }
     h2 {
         font-size: 64px;
     }

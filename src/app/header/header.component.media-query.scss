@@ -41,6 +41,18 @@
 }
 
 
+@media (min-width: 981px) {
+    a {
+        &:hover {
+            color: #00BEE8;
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 750px) {
     header {
         padding: 20px 50px;
