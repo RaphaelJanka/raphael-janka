@@ -192,18 +192,6 @@
         margin-top: 17px;
     }
 }
-
-@media (min-width: 981px) and (max-width: 1280px) {
-    button {
-        &:hover {
-            padding: 12px 44px 14px 44px;
-        }
-        &:active {
-            padding: 6px 32px 8px 32px;
-        }
-    }
-}
-
 @media (min-width: 981px) {
     button {
         &:hover {
@@ -228,8 +216,21 @@
             }
         }
     }
-    
 }
+
+
+@media (min-width: 981px) and (max-width: 1280px) {
+    button {
+        &:hover {
+            padding: 12px 44px 14px 44px;
+        }
+        &:active {
+            padding: 6px 32px 8px 32px;
+        }
+    }
+}
+
+
 
 
 

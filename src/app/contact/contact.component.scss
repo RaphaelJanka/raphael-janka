@@ -79,28 +79,19 @@ form {
     a {
         text-decoration: none;
     }
-    button {
-        background-color: #00BEE8;
-        color: white;
-        cursor: pointer;
-        border: 0;
-        font-size: 40px;
-        padding: 8px 32px 16px 32px;
-        border-radius: 10px;
-        &:hover {
-            background-color: #4B47FF;
-            padding: 14px 44px 22px 44px;
-            box-shadow: 0 0 10px 4px #00BEE8;
-            transition: all 225ms ease-in;
-        }
-        &:disabled {
-            background-color: grey;
-        }
-        &:active {
-            background-color: white !important;
-            color: black !important;
-            padding: 8px 32px 16px 32px;
-        }
+}
+
+button {
+    background-color: #00BEE8;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-size: 40px;
+    padding: 8px 32px 16px 32px;
+    border-radius: 10px;
+    &:disabled {
+        background-color: grey !important;
+        box-shadow: 0 0 0 0 !important;
     }
 }
 

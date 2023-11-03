@@ -12,7 +12,7 @@ footer {
 }
 
 
-a {
+.link-legal-notice {
     color: white;
     font-size: 28px;
     font-weight: 400;
@@ -28,18 +28,6 @@ a {
         width: 0;
         transition: width 0.3s ease-in-out;
         background-color: #4B47FF;
-    }
-
-    &:hover {
-        color: #00BEE8;
-
-        &::before {
-            width: 100%;
-        }
-    }
-
-    &:active {
-        color: white;
     }
 }
 
@@ -57,10 +45,6 @@ a {
         height: 60px;
         width: 60px;
         filter: drop-shadow(4px 3px 7px #00BEE8);
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.5);
-            transition: all 100ms ease-in;
-        }
+        cursor: pointer;
     }
 }
