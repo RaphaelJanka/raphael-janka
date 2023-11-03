@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.scss', 'portfolio.component.media-query.scss']
 })
 export class PortfolioComponent {
+
+  constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
+
+  
+
   notebooks = [
     'join.png',
     'sharkie.png',
@@ -45,4 +50,23 @@ export class PortfolioComponent {
     'https://raphael-janka.com/pokedex/html/index.html',
     'https://raphael-janka.com/ringoffire/index.html',
   ];
+
+  isHovered: boolean[] = new Array(this.notebooks.length).fill(false);
+
+  onTouchStart(index: number): void {
+    this.isHovered[index] = true;
+  }
+
+  onTouchEnd(index: number): void {
+    this.isHovered[index] = false;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event): void {
+    // Prüfen, ob der Klick außerhalb der project-content-Elemente erfolgt
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isHovered = this.isHovered.map(() => false); // Alle auf false setzen
+    }
+  }
+
 }

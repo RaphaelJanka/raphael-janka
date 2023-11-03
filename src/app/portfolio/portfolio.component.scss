@@ -154,3 +154,8 @@ a {
     width: 265px;
     z-index: -1;
 }
+
+.mobile-hover {
+    opacity: 100;
+    transition: all 225ms ease-in-out;
+}
