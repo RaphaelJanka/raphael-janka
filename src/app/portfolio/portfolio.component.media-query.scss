@@ -1,3 +1,11 @@
+@media (max-width: 2000px) {
+    .projects-container {
+        gap: 160px;
+        img {
+            width: 700px;
+        }
+    }
+}
 @media (max-width: 1700px) {
     .projects-container {
         gap: 100px;
