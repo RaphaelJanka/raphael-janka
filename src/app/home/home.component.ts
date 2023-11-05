@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -11,14 +11,19 @@ import { Component, OnInit, ElementRef } from '@angular/core';
   `,
 })
 export class HomeComponent implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor() {}
 
 
-  
+  /**
+   * Lifecycle hook called after Angular has initialized the component. Scrolls the window to the top when the component is initialized.
+   */
   ngOnInit(): void {
     this.scrollToTop();
   }
 
+  /**
+   * Scrolls the window to the top of the page with a smooth animation.
+   */
   scrollToTop() {
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   }

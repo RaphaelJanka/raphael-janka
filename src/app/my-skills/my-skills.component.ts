@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-skills.component.scss', 'my-skills.component.media-query.scss']
 })
 export class MySkillsComponent {
+  
   logos = [ 
     'Angular.svg', 
     'Typescript.svg', 
@@ -18,6 +19,8 @@ export class MySkillsComponent {
     'scrum.svg', 
     'material.svg'
   ];
+
+
   titles = [ 
     'Angular', 
     'Typescript', 

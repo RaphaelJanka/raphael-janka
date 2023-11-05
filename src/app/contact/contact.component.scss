@@ -38,7 +38,7 @@ h3 {
 
 form {
     max-width: 617px;
-    gap: 32px;
+    gap: 16px;
     div {
         width: 100%;
     }
@@ -81,6 +81,9 @@ form {
     }
 }
 
+.input-container {
+    width: 100%;
+}
 button {
     background-color: #00BEE8;
     color: white;
@@ -101,6 +104,9 @@ button {
     padding: 0 24px;
     gap: 16px;
     background-color: #141D2F;
+    &:hover {
+        border-color: #1CE6B6;
+    }
 }
 
 
@@ -120,9 +126,7 @@ button {
 }
 
 
-.hidden {
-    visibility: hidden;
-}
+
 
 
 #contact {
@@ -142,4 +146,68 @@ button {
 .checkbox {
     width: 16px;
     height: 16px;
+}
+
+.border-red {
+    border-color: #E61C40 !important;
+}
+
+.border-green {
+    border-color: #70E61C !important;
+}
+.error {
+    color: #E61C40;
+}
+
+.hidden {
+    visibility: hidden;
+}
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.425);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-animation {
+    width: 120px;
+    height: 120px;
+    animation: grow 1s ease;
+}
+
+.success-message {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4B47FF;
+    padding: 10px 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px #00BEE8;
+}
+
+.success-message-top {
+    animation: slideIn 1s ease-out forwards;
+    top: -100%;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 50%;
+    }
 }
