@@ -1,3 +1,17 @@
+@media(max-width: 2000px) {
+  .hero-profile {
+    width: 500px;
+  }
+  .separator-about-me {
+    height: 1px;
+    width: 380px;
+  }
+  .profile-background {
+    height: 700px;
+    width: 30vh;
+  }
+}
+
 @media(max-width: 1700px) {
     .hero-profile {
       width: 350px;

@@ -1,10 +1,29 @@
-@media (max-width: 2000px) {
+@media (max-width: 2600px) {
     section {
-        background-size: 50vw;
+        padding: 16% 0;
+     }
+}
+
+
+@media (max-width: 2300px) {
+    section {
+        padding: 16% 0;
     }
     .hero-container {
         img {
             bottom: 4vw;
+        }
+    }
+}
+
+@media (max-width: 2000px) {
+    section {
+       padding: 15% 0;
+    }
+    .hero-container {
+        img {
+            bottom: 4vw;
+            left: 80;
         }
     }
     .bow {

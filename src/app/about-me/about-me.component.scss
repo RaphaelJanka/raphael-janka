@@ -47,7 +47,7 @@
 
 
 .hero-profile {
-  width: 400px;
+  width: 500px;
   height: auto;
   border-radius: 0%;
   animation: border-radius-animation 18s infinite linear;
@@ -57,9 +57,9 @@
   
   
 .separator-about-me {
-    height: 1px;
+    height: 2px;
     background-color: #00BEE8;
-    width: 250px;
+    width: 380px;
     box-shadow: 3px 0px 5px 1px #00BEE8;
 }
 
@@ -67,8 +67,8 @@
 .profile-background {
   background-image: url('/assets/img/profile-background.svg');
   z-index: 1;
-  height: 700px;
-  width: 30vh;
+  height: 880px;
+  width: 24vh;
   background-size: cover;
   background-repeat: no-repeat;
   right: 0;
