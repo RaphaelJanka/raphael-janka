@@ -175,8 +175,8 @@ button {
 }
 
 .loading-animation {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: auto;
     animation: grow 1s ease;
 }
 
@@ -184,9 +184,11 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #4B47FF;
-    padding: 10px 24px;
+    padding: 24px 48px;
     border-radius: 10px;
     box-shadow: 0 0 10px 4px #00BEE8;
+    text-align: center;
+    font-size: 32px;
 }
 
 .success-message-top {
