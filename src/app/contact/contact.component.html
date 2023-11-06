@@ -11,7 +11,7 @@
             </p>
             <p>Need a Frontend developer? <b>Contact me!</b></p>
         </div>
-        <form (submit)="sendMail()" #myForm class="d-flex align-items-center flex-column">
+        <form (submit)="sendMail($event)" #myForm class="d-flex align-items-center flex-column">
             <div class="input-container">
                 <div #divName class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
                     <input #name type="text" placeholder="Your name" class="input-fields flex-grow-1" name="name">

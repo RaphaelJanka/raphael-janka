@@ -66,7 +66,7 @@ export class ContactComponent {
    * @param {ElementRef} imgElement - The element for displaying images or icons.
    */
   validateInputs(inputValue: string, borderElement: ElementRef, errorElement: ElementRef, imgElement: ElementRef) {
-    let border= borderElement.nativeElement;
+    let border = borderElement.nativeElement;
     let error = errorElement.nativeElement;
     let img = imgElement.nativeElement;
 
@@ -172,62 +172,48 @@ export class ContactComponent {
    * Initiates the process of sending an email by collecting form data and displaying loading animation.
    * Logs information about the email to be sent.
    */
-  sendMail() {
-    console.log('Send Mail to', this.myForm);
-    let name = this.name.nativeElement;
-    let mail = this.mail.nativeElement;
-    let message = this.message.nativeElement;
-    let overlay = this.overlay.nativeElement;
-    let successMessage = this.successMessage.nativeElement;
-    let checkbox = this.checkbox.nativeElement;
-    let logo = this.logo.nativeElement;
-    this.showLoadingAnimation(overlay, logo);
-    this.sendData(name, mail, message, overlay, successMessage, checkbox, logo);
-    
+  async sendMail(event: any) {
+    this.showLoadingAnimation();
+    try {
+      event.preventDefault();
+      const data = new FormData(event.target);
+      await fetch("https://formspree.io/f/mknleqzb", {
+        method: "POST",
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      });
+    } catch (error) {
+        console.error('An error occurred:', error);
+    } finally {
+      this.restoreInputContainers();
+      this.displaySuccessMessage();
+    }
   }
 
 
   /**
    * Displays a loading animation by removing the 'd-none' class from the overlay and logo elements.
-   *
-   * @param {HTMLElement} overlay - The DOM element representing the overlay used for loading animation.
-   * @param {HTMLElement} logo - The DOM element representing the logo to be displayed during loading.
    */
-  showLoadingAnimation(overlay: HTMLElement, logo: HTMLElement) {
+  showLoadingAnimation() {
+    let overlay = this.overlay.nativeElement;
+    let logo = this.logo.nativeElement;
     overlay.classList.remove('d-none');
     logo.classList.remove('d-none');
   }
 
 
   /**
-   * Sends form data to a server using a POST request and handles the response.
-   *
-   * @param {HTMLInputElement} name - The DOM element representing the name input field.
-   * @param {HTMLInputElement} mail - The DOM element representing the email input field.
-   * @param {HTMLInputElement} message - The DOM element representing the message input field.
-   * @param {HTMLElement} overlay - The DOM element representing an overlay used for loading animation.
-   * @param {HTMLElement} successMessage - The DOM element for displaying a success message.
-   * @param {HTMLInputElement} checkbox - The DOM element representing a checkbox input.
-   * @param {HTMLElement} logo - The DOM element representing a logo.
+   * Restores the input containers to their initial state after processing a form submission.
    */
-  async sendData(name: HTMLInputElement, mail: HTMLInputElement, message: HTMLInputElement, overlay: HTMLElement, successMessage: HTMLElement, checkbox: HTMLInputElement, logo: HTMLElement) {
-    try {
-      let formData = new FormData();
-      formData.append('name', name.value);
-      formData.append('mail', mail.value);
-      formData.append('message', message.value);
-      await fetch('https://raphael-janka.com/send_mail/send_mail.php', 
-    {
-      method: 'POST',
-      body: formData,
-    });
-    } catch (error) {
-        console.error('An error occurred:', error);
-    } finally {
-      this.restoreInputValues(name, mail, message, checkbox);
-      this.restoreInputDivsAfterSendingMail(name, mail, message);
-      this.displaySuccessMessage(logo, successMessage, overlay);
-    }
+  restoreInputContainers() {
+    let name = this.name.nativeElement;
+    let mail = this.mail.nativeElement;
+    let message = this.message.nativeElement;
+    let checkbox = this.checkbox.nativeElement;
+    this.restoreInputValues(name, mail, message, checkbox);
+    this.restoreInputDivsAfterSendingMail(name, mail, message);
   }
 
 
@@ -263,12 +249,11 @@ export class ContactComponent {
 
   /**
    * Displays a success message and hides the loading animation after sending an email.
-   *
-   * @param {HTMLElement} logo - The DOM element representing a logo.
-   * @param {HTMLElement} successMessage - The DOM element for displaying a success message.
-   * @param {HTMLElement} overlay - The DOM element representing an overlay used for loading animation.
    */
-  displaySuccessMessage(logo: HTMLElement, successMessage: HTMLElement, overlay: HTMLElement) {
+  displaySuccessMessage() {
+    let overlay = this.overlay.nativeElement;
+    let logo = this.logo.nativeElement;
+    let successMessage = this.successMessage.nativeElement;
     logo.classList.add('d-none');
     successMessage.classList.remove('d-none');
     successMessage.classList.add('success-message-top');

@@ -84,6 +84,8 @@ form {
 .input-container {
     width: 100%;
 }
+
+
 button {
     background-color: #00BEE8;
     color: white;
@@ -126,9 +128,6 @@ button {
 }
 
 
-
-
-
 #contact {
     scroll-margin-top: 150px;
 }
@@ -148,20 +147,27 @@ button {
     height: 16px;
 }
 
+
 .border-red {
     border-color: #E61C40 !important;
 }
 
+
 .border-green {
     border-color: #70E61C !important;
 }
+
+
 .error {
     color: #E61C40;
 }
 
+
 .hidden {
     visibility: hidden;
 }
+
+
 .overlay {
     top: 0;
     left: 0;
@@ -174,11 +180,13 @@ button {
     align-items: center;
 }
 
+
 .loading-animation {
     width: 160px;
     height: auto;
-    animation: grow 1s ease;
+    animation: grow 2s ease;
 }
+
 
 .success-message {
     left: 50%;
@@ -191,10 +199,12 @@ button {
     font-size: 32px;
 }
 
+
 .success-message-top {
     animation: slideIn 1s ease-out forwards;
     top: -100%;
 }
+
 
 @keyframes grow {
     0% {
@@ -204,6 +214,7 @@ button {
         transform: scale(2);
     }
 }
+
 
 @keyframes slideIn {
     0% {
