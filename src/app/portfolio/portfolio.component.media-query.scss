@@ -63,7 +63,10 @@
 
 @media (max-width: 1400px) {
     .projects-container {
-        margin: 160px 100px 0 100px;
+        margin: 100px 100px 0 100px;
+    }
+    .select-button {
+        font-size: 23px;
     }
 }
 
@@ -93,6 +96,12 @@
     }
     .portfolio-background-1 {
         width: 35vw;
+    }
+    .select-button {
+        padding: 6px 40px;
+    }
+    .filter-container {
+        margin: 0 100px;
     }
 }
 
@@ -128,7 +137,7 @@
         padding: 0 50px;
     }
     .projects-container {
-        margin: 20vw 50px 0 50px;
+        margin: 70px 50px 0 50px;
     }
     .portfolio-background-1 {
         top: 150vw;
@@ -136,6 +145,13 @@
     }
     .portfolio-background-2 {
         width: 46vw;
+    }
+    .select-button {
+        padding: 6px 32px;
+        font-size: 18px;
+    }
+    .filter-container {
+        margin: 0 50px;
     }
 }
 
@@ -178,6 +194,13 @@
     .project-button {
         padding: 0 5px;
     }
+    .select-button {
+        padding: 6px 24px;
+        font-size: 16px;
+    }
+    .filter-container {
+        gap: 24px;
+    }
 }
 
 
@@ -211,8 +234,12 @@
     .subtitle-container {
         padding: 0 25px;
     }
-    .projects-container {
-        margin: 30vw 25px 0 25px;
+    .filter-container {
+        margin: 0 25px;
+        gap: 18px;
+    }
+    .select-button {
+        padding: 6px 16px;
     }
 }
 
@@ -235,8 +262,8 @@
     .button-container {
         margin-top: 8px;
     }
+    .projects-button {
+        font-size: 10px;
+    }
 }
 
-@media (max-width: 390px) {
-    
-}

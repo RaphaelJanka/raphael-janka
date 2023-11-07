@@ -55,9 +55,11 @@ export class PortfolioComponent implements OnInit {
     this.filterProjects();
   }
 
+  
   ngAfterViewInit(): void {
     this.highlightAllButton();
-}
+  }
+
 
   highlightAllButton() {
     let allButton = this.allButton.nativeElement;
@@ -82,6 +84,34 @@ export class PortfolioComponent implements OnInit {
       this.filteredProjects = this.notebooks.filter((project) => !project.tech.includes('Angular'));
     } else if (this.selectedFilter === 'Angular') {
       this.filteredProjects = this.notebooks.filter((project) => project.tech.includes('Angular'));
+    }
+  }
+
+  touchStarted = false;
+
+  
+  onTouchStart(event: TouchEvent) {
+    let target = event.currentTarget as HTMLElement | null;
+    if (target) {
+      if (!this.touchStarted) {
+        target.style.opacity = '1';
+      } else {
+        target.style.opacity = '0';
+      }
+      this.touchStarted = !this.touchStarted;
+    }
+  }
+
+
+  onTouchStartButtons(event: TouchEvent) {
+    let target = event.currentTarget as HTMLElement | null;
+    if (target) {
+      if (!this.touchStarted) {
+        target.style.backgroundColor = '#00BEE8';
+      } else {
+        target.style.backgroundColor = 'transparent';
+      }
+      this.touchStarted = !this.touchStarted;
     }
   }
 }

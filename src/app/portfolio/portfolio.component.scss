@@ -86,6 +86,10 @@ h3 {
     font-size: 48px;
 }
 
+.filter-container {
+    margin: 0 160px;
+    gap: 40px;
+}
 
 .select-button {
     background-color: transparent;
@@ -93,7 +97,8 @@ h3 {
     border: 1px solid #00BEE8;
     outline: 0;
     border-radius: 10px;
-    padding: 8px 24px;
+    padding: 12px 40px;
+    font-size: 28px;
     &:hover {
         box-shadow: 0 0 10px 4px #4B47FF;
         transition: all 100ms ease-in;
