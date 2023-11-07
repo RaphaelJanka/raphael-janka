@@ -1,90 +1,87 @@
-import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss', 'portfolio.component.media-query.scss']
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit {
+  @ViewChild('allButton') allButton!: ElementRef;
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
+  constructor() { }
 
-  
+
+  selectedFilter = 'All';
+
+  filteredProjects: any[] = [];
 
   notebooks = [
-    'join.png',
-    'sharkie.png',
-    'pokedex.png',
+    {
+      image: 'join.png',
+      title: 'Join',
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      tech: 'HTML | CSS | JavaScript | Bootstrap',
+      github: 'https://github.com/RaphaelJanka/join',
+      projectLink: 'https://raphael-janka.com/Join/html/login.html',
+    },
+    {
+      image: 'sharkie.png',
+      title: 'Sharkie',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
+      tech: 'HTML | CSS | JavaScript',
+      github: 'https://github.com/RaphaelJanka/Sharkie',
+      projectLink: 'https://raphael-janka.com/sharkie/index.html',
+    },
+    {
+      image: 'pokedex.png',
+      title: 'Pokédex',
+      description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      tech: 'HTML | CSS | JavaScript | API',
+      github: 'https://github.com/RaphaelJanka/pokedex',
+      projectLink: 'https://raphael-janka.com/pokedex/html/index.html',
+    },
+    {
+      image: 'website.png',
+      title: 'Personal Website',
+      description: 'Own personal website',
+      tech: 'Angular | Typescript | Bootstrap',
+      github: 'https://github.com/RaphaelJanka/raphael-janka',
+      projectLink: '',
+    },
   ];
+
+
+  ngOnInit(): void {
+    this.filterProjects();
+  }
+
+  ngAfterViewInit(): void {
+    this.highlightAllButton();
+}
+
+  highlightAllButton() {
+    let allButton = this.allButton.nativeElement;
+    allButton.classList.add('all-button');
+  }
   
-  titles = [
-    'Join',
-    'Sharkie',
-    'Pokédex'
-  ];
 
-  descriptions = [
-    'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-    'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
-    'Based on the PokéAPI a simple library that provides and catalogues pokemon information.'
-  ]
-
-
-  tech = [
-    'HTML | CSS | JavaScript | Bootstrap',
-    'HTML | CSS | JavaScript',
-    'HTML | CSS | JavaScript | API'
-  ];
-
-
-  github = [
-    'https://github.com/RaphaelJanka/join',
-    'https://github.com/RaphaelJanka/Sharkie',
-    'https://github.com/RaphaelJanka/pokedex',
-  ];
-
-
-  projectLinks = [
-    'https://raphael-janka.com/Join/html/login.html',
-    'https://raphael-janka.com/sharkie/index.html',
-    'https://raphael-janka.com/pokedex/html/index.html'
-  ];
-
-
-  isHovered: boolean[] = new Array(this.notebooks.length).fill(false);
-
-  
-  /**
-   * Handles the touch start event for a specified element at a given index.
-   *
-   * @param {number} index - The index of the element associated with the touch start event.
-   */
-  onTouchStart(index: number): void {
-    this.isHovered[index] = true;
+  selectFilter(filter: string) {
+    let allButton = this.allButton.nativeElement;
+    if (allButton.classList.contains('all-button')) {
+      allButton.classList.remove('all-button');
+    }
+    this.selectedFilter = filter;
+    this.filterProjects();
   }
 
 
-  /**
-   * Handles the touch end event for a specified element at a given index.
-   *
-   * @param {number} index - The index of the element associated with the touch end event.
-   */
-  onTouchEnd(index: number): void {
-    this.isHovered[index] = false;
-  }
-
-
-  /**
-   * Listens for a document click event and resets the hovered state if the click occurs outside of the component's elements.
-   *
-   * @param {Event} event - The click event.
-   */
-  @HostListener('document:click', ['$event'])
-  onDocumentClick(event: Event): void {
-    // Prüfen, ob der Klick außerhalb der project-content-Elemente erfolgt
-    if (!this.elementRef.nativeElement.contains(event.target)) {
-      this.isHovered = this.isHovered.map(() => false); // Alle auf false setzen
+  filterProjects() {
+    if (this.selectedFilter === 'All') {
+      this.filteredProjects = this.notebooks;
+    } else if (this.selectedFilter === 'Javascript') {
+      this.filteredProjects = this.notebooks.filter((project) => !project.tech.includes('Angular'));
+    } else if (this.selectedFilter === 'Angular') {
+      this.filteredProjects = this.notebooks.filter((project) => project.tech.includes('Angular'));
     }
   }
-
 }

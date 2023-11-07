@@ -30,7 +30,7 @@ h2 {
 
 
 .subtitle-container {
-    margin-top: 24px;
+    margin: 24px 0 60px 0;
     padding: 0 100px;
     text-align: center;
     font-size: 28px;
@@ -38,7 +38,7 @@ h2 {
 
 
 .projects-container {
-    margin: 160px 160px 0 160px;
+    margin: 100px 160px 0 160px;
     gap: 240px;
     img {
         width: 800px;
@@ -84,6 +84,32 @@ h2 {
 
 h3 {
     font-size: 48px;
+}
+
+
+.select-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #00BEE8;
+    outline: 0;
+    border-radius: 10px;
+    padding: 8px 24px;
+    &:hover {
+        box-shadow: 0 0 10px 4px #4B47FF;
+        transition: all 100ms ease-in;
+    }
+    &:active {
+        background-color: #00BEE8;
+    }
+    &:focus {
+        background-color: #00BEE8;
+        box-shadow: 0 0 10px 4px #4B47FF;
+    }
+}
+
+.all-button {
+        background-color: #00BEE8;
+        box-shadow: 0 0 10px 4px #4B47FF;
 }
 
 
@@ -154,6 +180,7 @@ a {
     width: 265px;
     z-index: -1;
 }
+
 
 .mobile-hover {
     opacity: 100;

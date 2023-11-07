@@ -1,5 +1,5 @@
 <section id="portfolio" class="position-relative">
-    <div class="d-flex flex-column align-items-end">
+    <div class="d-flex flex-column align-items-end hide">
         <div class="d-flex align-items-center title-container">
             <div class="separator-small"></div>
             <h2>Portfolio</h2>
@@ -9,18 +9,23 @@
             <span>This page is a sample of my work - please feel free to try them out.</span>
         </div>
     </div>
+
+    <div class="d-flex justify-content-center gap-3">
+        <button #allButton class="select-button" (click)="selectFilter('All')">All</button>
+        <button class="select-button" (click)="selectFilter('Javascript')">Javascript</button>
+        <button class="select-button" (click)="selectFilter('Angular')">Angular</button>
+    </div>
     
     <div class="projects-container d-flex flex-column align-items-center">    
-        <div *ngFor="let project of notebooks; let i = index" class="position-relative project-box">
-            <img src="assets/img/{{ project }}" alt="">
-            <div class="position-absolute project-content d-flex flex-column align-items-center justify-content-center row-gap-3"
-                (touchstart)="onTouchStart(i)" (touchend)="onTouchEnd(i)"   [ngClass]="{ 'mobile-hover': isHovered[i] }">
-                <h3> {{ titles[i] }}</h3>
-                <span class="tech"> {{ tech[i] }}</span>
-                <span class="description">{{ descriptions[i] }}</span>
+        <div *ngFor="let project of filteredProjects; let i = index" class="position-relative project-box">
+            <img src="assets/img/{{ project.image }}" alt="">
+            <div class="position-absolute project-content d-flex flex-column align-items-center justify-content-center row-gap-3">
+                <h3> {{ project.title }}</h3>
+                <span class="tech"> {{ project.tech }}</span>
+                <span class="description">{{ project.description }}</span>
                 <div class=" d-flex justify-content-center button-container">
-                    <a href="{{ projectLinks[i] }}" class="project-button rounded-3 d-flex align-items-center justify-content-center" target="_blank">Live Test</a>
-                    <a href="{{ github[i] }}" class="github-button d-flex justify-content-center align-items-center rounded-3" target="_blank">Github</a>
+                    <a *ngIf="project.projectLink" href="{{ project.projectLink }}" class="project-button rounded-3 d-flex align-items-center justify-content-center" target="_blank">Live Test</a>
+                    <a href="{{ project.github }}" class="github-button d-flex justify-content-center align-items-center rounded-3" target="_blank">Github</a>
                 </div>
             </div>
         </div>
