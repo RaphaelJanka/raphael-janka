@@ -8,7 +8,6 @@ import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 export class HeaderComponent { 
   @ViewChild('sideBar') sideBar!: ElementRef;
   @ViewChild('burgerMenu') burgerMenu!: ElementRef;
-  constructor() {}
 
   menu: any;
   
@@ -18,13 +17,13 @@ export class HeaderComponent {
    *
    * @param {Event} event - The window resize event.
    */
-  // @HostListener('window:resize', ['$event'])
-  // onResize(event: Event): void {
-  //   if (window.innerWidth > 550) {
-  //     this.hideSidebar();
-  //     this.resetBurgerMenuButton();
-  //   }
-  // }
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    if (window.innerWidth > 550) {
+      this.hideSidebar();
+      this.resetBurgerMenuButton();
+    }
+  }
 
 
   /**

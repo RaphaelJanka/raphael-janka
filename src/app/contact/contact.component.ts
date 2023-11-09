@@ -1,13 +1,14 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-
+import lottie from 'lottie-web';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss', 'contact.component.media-query.scss']
 })
+
+
 export class ContactComponent {
-  @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('name') name!: ElementRef;
   @ViewChild('mail') mail!: ElementRef;
   @ViewChild('message') message!: ElementRef;
@@ -25,7 +26,12 @@ export class ContactComponent {
   @ViewChild('overlay') overlay!: ElementRef;
   @ViewChild('successMessage') successMessage!: ElementRef;
   @ViewChild('logo') logo!: ElementRef;
+  @ViewChild('mailSent') mailSent!: ElementRef;
   
+
+  REGEX = /^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/;
+
+  private animationPath = 'assets/img/Animation - 1699567804264.json';
 
   constructor() {}
 
@@ -87,8 +93,7 @@ export class ContactComponent {
     let border = this.divMail.nativeElement;
     let error = this.errorMail.nativeElement;
     let img = this.imgMail.nativeElement;
-
-    if (mailValue.includes('@') && mailValue.indexOf('@') > 0 && mailValue.indexOf('@') < mailValue.length - 1) {
+    if (mailValue.match(this.REGEX)) {
       this.showChecked(border, error, img);
     } else {
       this.showError(border, error, img);
@@ -163,7 +168,7 @@ export class ContactComponent {
    * @param {boolean} checkbox - The state of the checkbox input.
    */
   checkFormValidation(name: string, mail: string, message: string, checkbox: boolean) {
-    let isFormValid = name.length > 1 && mail.includes('@') && message.length > 1 && checkbox;
+    let isFormValid = name.length > 1 && mail.match(this.REGEX) && message.length > 1 && checkbox;
     this.sendButton.nativeElement.disabled = !isFormValid;
   }
 
@@ -173,7 +178,7 @@ export class ContactComponent {
    * Logs information about the email to be sent.
    */
   async sendMail(event: any) {
-    this.showLoadingAnimation();
+    this.showOverlay();
     try {
       event.preventDefault();
       const data = new FormData(event.target);
@@ -194,13 +199,11 @@ export class ContactComponent {
 
 
   /**
-   * Displays a loading animation by removing the 'd-none' class from the overlay and logo elements.
+   * Displays an overlay by removing the 'd-none' class from the overlay elements.
    */
-  showLoadingAnimation() {
+  showOverlay() {
     let overlay = this.overlay.nativeElement;
-    let logo = this.logo.nativeElement;
     overlay.classList.remove('d-none');
-    logo.classList.remove('d-none');
   }
 
 
@@ -248,20 +251,29 @@ export class ContactComponent {
 
 
   /**
-   * Displays a success message and hides the loading animation after sending an email.
+   * Displays a success message and hides the overlay after sending an email.
    */
   displaySuccessMessage() {
     let overlay = this.overlay.nativeElement;
-    let logo = this.logo.nativeElement;
-    let successMessage = this.successMessage.nativeElement;
-    logo.classList.add('d-none');
-    successMessage.classList.remove('d-none');
-    successMessage.classList.add('success-message-top');
+    this.playAnimation();
     setTimeout(() => {
       overlay.classList.add('d-none');
-      successMessage.classList.add('d-none');
-      successMessage.classList.remove('success-message-top');
     }, 2500);
+  }
+
+  
+  /**
+   * Plays the animation using the Lottie library.
+   */
+  playAnimation() {
+    let animationContainer = this.mailSent.nativeElement;
+    lottie.loadAnimation({
+      container: animationContainer,
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: this.animationPath,
+    })
   }
 }
 

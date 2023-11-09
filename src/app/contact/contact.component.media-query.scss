@@ -26,9 +26,6 @@
             }
         }
     }
-    .success-message {
-        font-size: 28px;
-    }
 }
 
 
@@ -59,10 +56,6 @@
                 font-size: 16px;
             }
         }
-    }
-    .success-message {
-        font-size: 24px;
-        padding: 16px 32px;
     }
 }
 
@@ -112,13 +105,6 @@
     .footer-background {
         width: 455px;
         top: 406px;
-    }
-    .success-message {
-        font-size: 16px;
-        padding: 12px 24px;
-    }
-    .loadinf-animation {
-        width: 120px;
     }
 }
 
@@ -193,9 +179,6 @@
     h2 {
         font-size: 50px;
     }
-    .success-message {
-        font-size: 12px;
-    }
 }
 
 
@@ -211,5 +194,9 @@
     }
     h2 {
         font-size: 36px;
+    }
+    .success {
+        width: 200px;
+        height: 200px;
     }
 }
