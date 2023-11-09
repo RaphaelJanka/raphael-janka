@@ -258,7 +258,7 @@ export class ContactComponent {
     this.playAnimation();
     setTimeout(() => {
       overlay.classList.add('d-none');
-    }, 2500);
+    }, 3500);
   }
 
   
