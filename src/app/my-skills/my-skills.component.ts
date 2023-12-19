@@ -7,7 +7,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss', 'my-skills.component.media-query.scss'],
    animations: [
-    trigger('fadeInFromBottom', [
+    trigger('fadeInFromRight', [
       state('void', style({ transform: 'translateX(70%)', opacity: 0 })),
       transition(':enter', [
         animate('1s 500ms ease-out', style({ transform: 'translateX(0)', opacity: 1 })),

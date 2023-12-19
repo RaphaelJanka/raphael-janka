@@ -16,8 +16,8 @@
         <button #angularButton class="select-button" (click)="selectFilter('Angular')" (touchstart)="onTouchStartButtons($event)">Angular</button>
     </div>
     
-    <div class="projects-container d-flex flex-column align-items-center" *ngIf="isVisible">    
-        <div *ngFor="let project of filteredProjects; let i = index" class="position-relative project-box" [@flipAnimation]>
+    <div class="projects-container d-flex flex-column align-items-center">    
+        <div *ngFor="let project of filteredProjects; let i = index" class="position-relative project-box" [@flipAnimation]="isVisible ? 'in' : 'void'">
             <img src="assets/img/{{ project.image }}" alt=""> 
             <div class="position-absolute project-content d-flex flex-column align-items-center justify-content-center row-gap-3" (touchstart)="onTouchStart($event)">
                 <h3> {{ project.title }}</h3>

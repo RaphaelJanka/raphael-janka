@@ -1,49 +1,9 @@
-@media (max-width: 2600px) {
-    section {
-        padding: 16% 0;
-     }
-}
-
-
-@media (max-width: 2300px) {
-    section {
-        padding: 16% 0;
-    }
-    .hero-container {
-        img {
-            bottom: 4vw;
-        }
-    }
-}
-
-@media (max-width: 2000px) {
-    section {
-       padding: 15% 0;
-    }
-    .hero-container {
-        img {
-            bottom: 4vw;
-            left: 80px;
-        }
-    }
-    .bow {
-        top: 34vw;
-    }
-    .name {
-        font-size: 120px;
-    }
-    .front-end {
-        font-size: 76px;
-    }
-    .rotate {
-        font-size: 84px;
-    }
-}
-
-
 @media (max-width: 1700px) {
-    .bow {
-        top: 35vw;
+    .hero-container {
+        img {
+            bottom: 140px;
+            width: 30%;
+        }
     }
     .name {
         font-size: 100px;
@@ -115,13 +75,12 @@
 
 
 @media (max-width: 1400px) {
+    section {
+        background-position: -20%;
+        background-size: 57%;
+    }
     .mr-100 {
         margin-right: 100px;
-    }
-    .hero-container {
-        img {
-            bottom: 6vw;
-        }
     }
 }
 
@@ -139,14 +98,15 @@
 
 
 @media (max-width: 1280px) {
+    section {
+        margin-top: 100px;
+    }
     .hero-container {
         img {
-            bottom: 7vw;
+            bottom: 130px;
         }
     }
-    .bow {
-        top: 32vw;
-    }
+    
     .name {
         font-size: 74px;
     }
@@ -182,8 +142,10 @@
 
 
 @media (max-width: 1100px) {
-    section {
-        background-size: 500px;
+    .hero-container {
+        img {
+            left: 60px;
+        }
     }
     .name {
         font-size: 67px;
@@ -306,7 +268,7 @@
         }
     }
     .bow {
-        top: 35vw;
+        top: 38vw;
     }
     .mail-address {
         display: none;
@@ -316,7 +278,7 @@
 
 @media (max-width: 700px) {
     .bow {
-        top: 38vw;
+        top: 40vw;
     }
 }
 
