@@ -1,15 +1,18 @@
-<header class="d-flex justify-content-between align-items-center position-fixed">
-    <img src="assets/img/rj-logo.png" alt="rj-logo" routerLink="/">
-    <div class="header-links justify-content-between">
-        <a #linkAboutMe href="#aboutMe">About me</a>
-        <a #linkMySkills href="#mySkills">Skills</a>
-        <a #linkPortfolio href="#portfolio">Portfolio</a>
-        <a #linkContact href="#contact">Contact</a>
-    </div>
-    <div #burgerMenu class="burger-menu-container justify-content-center align-items-center">
-        <img (click)="handleSidebar()" src="assets/img/burger-menu.svg" alt="burger-menu">
+<header class="position-fixed">
+    <div class="d-flex justify-content-between align-items-center header-container">
+        <img src="assets/img/rj-logo.png" alt="rj-logo" routerLink="/">
+        <div class="header-links justify-content-between">
+            <a #linkAboutMe href="#aboutMe">About me</a>
+            <a #linkMySkills href="#mySkills">Skills</a>
+            <a #linkPortfolio href="#portfolio">Portfolio</a>
+            <a #linkContact href="#contact">Contact</a>
+        </div>
+        <div #burgerMenu class="burger-menu-container justify-content-center align-items-center">
+            <img (click)="handleSidebar()" src="assets/img/burger-menu.svg" alt="burger-menu">
+        </div>
     </div>
 </header>
+
 
 <div #sideBar class="sidebar position-fixed">
     <a (click)="handleSidebar()" href="#aboutMe">About me</a>

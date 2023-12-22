@@ -1,38 +1,33 @@
-<section id="aboutMe" class="about-me">
-    <h1>About me</h1>
-    <div class="d-flex justify-content-between align-items-center">
-        <div class="introduction" [@slideInFromLeft]="isVisible ? 'in' : 'void'">
-            <div>
-                <p>Hi, I am a German-speaking Front End Developer based in Munich, Germany, 
-                    who's always eager to incorporate the latest front-end trends into his work. 
-                    My enthusiasm for innovation is coupled with a strong willingness to adapt
-                    and acquire new skills.</p>
+<section id="aboutMe">
+    <div class="max-width first-container">
+        <h1>About me</h1>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="introduction" [@slideInFromLeft]="isVisible ? 'in' : 'void'">
+                <div>
+                    <p>Hi, I am a German-American web developer with experience in programming web applications 
+                        and responsive websites using JavaScript, TypeScript  and Angular. 
+                    </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-40">
+                    <img src="assets/img/bulb.svg" alt="bulb">
+                    <p class="bulb-intro ">I acquired my programming skills through an intensive training program at a certified coding school. 
+                        During this time, I developed business applications - on my own and as a part of a collaborative team. 
+                        Feel free to check out my public portfolio where you can get an overview of my previous projects. 
+                    </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-40">
+                    <img src="assets/img/puzzle.svg" alt="puzzle">
+                    <p class="puzzle-intro">
+                        What fascinates me most about coding is the ability to bring projects to life with just a few lines of code.                     
+                        I'm excited to contribute my skills and work with your team to create great web experiences.
+                    </p>
+                </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center mt-40">
-                <img src="assets/img/bulb.svg" alt="bulb">
-                <p class="bulb-intro ">Having successfully graduated from the Developer Academy,
-                    I've established a robust foundation for my journey in 
-                    frontend development. 
-                    Whether it's building a new website from scratch, 
-                    optimizing an existing one, or solving challenging problems. 
-                    I'm always up for the task.
-                    I am excited about the opportunity to contribute my skills 
-                    and expertise to your projects and collaborate with your team 
-                    to create exceptional web experiences.
-                </p>
-            </div>
-            <div class="d-flex align-items-center justify-content-between mt-40">
-                <img src="assets/img/puzzle.svg" alt="puzzle">
-                <p class="puzzle-intro">Stepping into the the realm of IT through a lateral career shift 
-                    has been a thrilling journey for me, one that has opened the door 
-                    to a world filled with boundless opportunities. 
-                </p>
+            <div class="align-items-center profile-container">
+                <img class="hero-profile" src="assets/img/hero-headshot.png" alt="">
+                <div class="separator-about-me"></div>
             </div>
         </div>
-        <div class="align-items-center profile-container">
-            <img class="hero-profile" src="assets/img/hero-headshot.png" alt="">
-            <div class="separator-about-me"></div>
-        </div>
+        <img src="assets/img/profile-background.svg" class="profile-background position-absolute">
     </div>
-    <div class="profile-background position-absolute"></div>  
 </section>

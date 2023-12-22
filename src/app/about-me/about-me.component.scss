@@ -1,22 +1,3 @@
-.about-me {
-    margin-left: 160px;
-    z-index: 1;
-    position: relative;
-    margin-top: 200px;
-    scroll-margin-top: 150px;
-    h1 {
-        font-size: 120px;
-        margin-bottom: 40px;
-        font-weight: 700;
-    }
-    p {
-        font-size: 28px;
-        font-weight: 100;
-        margin-bottom: 0;
-    }
-}
-
-
 .introduction {
     max-width: 800px;
     img {
@@ -65,18 +46,34 @@
 
 
 .profile-background {
-  background-image: url('/assets/img/profile-background.svg');
   z-index: 1;
   height: 700px;
-  width: 30vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 600px;
   right: 0;
   top: 0;
 }
 
 .hero-container {
   position: relative;
+}
+
+.first-container {
+    margin: auto;
+    padding-left: 160px;
+    z-index: 1;
+    position: relative;
+    padding-top: 200px;
+    scroll-margin-top: 150px;
+    h1 {
+        font-size: 120px;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 28px;
+        font-weight: 100;
+        margin-bottom: 0;
+    }
 }
 
 

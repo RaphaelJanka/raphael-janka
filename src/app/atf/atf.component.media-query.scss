@@ -1,10 +1,33 @@
-@media (max-width: 1700px) {
-    .hero-container {
-        img {
-            bottom: 140px;
-            width: 30%;
-        }
+@media (max-width: 3500px) {
+    .bow {
+        top: 710px;
     }
+}
+
+@media (max-width: 3500px) {
+    .bow {
+        top: 768px;
+    }
+}
+
+@media (max-width: 2500px) {
+    .bow {
+        top: 828px;
+    }
+}
+
+@media (max-width: 2200px) {
+    .bow {
+        top: 866px;
+    }
+}
+@media (max-width: 1920px) {
+    .bow {
+        top: 897px;
+    }
+}
+
+@media (max-width: 1850px) {
     .name {
         font-size: 100px;
     }
@@ -34,12 +57,24 @@
     .mail-address {
         font-size: 28px;
     }
+    .hero {
+        width: 500px;
+    }
+    .bow {
+        top: 776px;
+    }
+    .background-img {
+        width: 828px;
+    }
+    section {
+        padding-bottom: 400px;
+    }
 }
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
     .bow {
-        top: 35vw;
+        top: 740px;
     }
     .name {
         font-size: 90px;
@@ -71,16 +106,42 @@
     .mail-address {
         font-size: 26px;
     }
+    .hero {
+        width: 450px;
+    }
+    section {
+        padding-bottom: 340px;
+    }
 }
 
+@media (max-width: 1500px) {
+    .hero {
+        width: 420px;
+    }
+    .bow {
+        top: 714px;
+    }
+    .background-img {
+        width: 700px;
+    }
+}
 
 @media (max-width: 1400px) {
-    section {
-        background-position: -20%;
-        background-size: 57%;
-    }
     .mr-100 {
         margin-right: 100px;
+    }
+}
+
+@media (max-width: 1320px) {
+   .hero {
+        width: 390px;
+    }
+    .bow {
+        top: 648px;
+    }
+    section {
+        padding-top: 300px;
+        padding-bottom: 260px;
     }
 }
 
@@ -99,14 +160,12 @@
 
 @media (max-width: 1280px) {
     section {
-        margin-top: 100px;
+    padding-bottom: 200px;
+    padding-top: 255px;
     }
-    .hero-container {
-        img {
-            bottom: 130px;
-        }
+    .bow {
+        top: 528px;
     }
-    
     .name {
         font-size: 74px;
     }
@@ -138,15 +197,19 @@
     .mail-address {
         font-size: 23px;
     }
+    .hero {
+        width: 330px;
+    }
+
+    .background-img {
+        width: 600px;
+    }
 }
 
 
+
+
 @media (max-width: 1100px) {
-    .hero-container {
-        img {
-            left: 60px;
-        }
-    }
     .name {
         font-size: 67px;
     }
@@ -156,13 +219,16 @@
     .rotate {
         font-size: 48px;
     }
+    .bow {
+        top: 550px;
+    }
+    .hero {
+        left: 40px;
+    }
 }
 
 
 @media (max-width: 1000px) {
-    section {
-        margin-top: 100px;
-    }
     .name {
         font-size: 64px;
     }
@@ -217,23 +283,25 @@
 
 @media (max-width: 980px) {
     section {
-        margin-top: 21vw;
-        background-size: 70vw;
-        background-position: 53%;
+        margin-top: 200px;
+        padding-bottom: 240px;
     }
-    .hero-container {
-        height: 276px;
-        img {
-            width: 41vw;
-            left: 29vw;
-            bottom: 135px;
-        }
+    .bow {
+        top: 434px;
+    }
+    .hero {
+        left: 30vw;
+        bottom: -100px;
+    }
+    .background-img {
+        left: 18vw;
+        bottom: -230px;
     }
     .introduction-container-responsive {
         position: absolute;
-        bottom: -148px;
+        bottom: -400px;
         z-index: 1;
-        width: 100vw;
+        width: 100%;
     }
     .introduction-content-responsive {
         margin-left: auto;
@@ -257,18 +325,16 @@
 
 
 @media (max-width: 800px) {
-    section {
-        background-size: 75vw;
-        
+    .hero {
+        width: 276px;
     }
-    .hero-container {
-        height: 276px;
-        img {
-            left: 30vw;
-        }
+    .background-img {
+        width: 74vw;
+        left: 12vw;
+        bottom: -200px;
     }
     .bow {
-        top: 38vw;
+        top: 456px;
     }
     .mail-address {
         display: none;
@@ -278,14 +344,17 @@
 
 @media (max-width: 700px) {
     .bow {
-        top: 40vw;
+        top: 470px;
+    }
+    .background-img {
+        width: 80vw;
     }
 }
 
 
 @media (max-width: 600px) {
     .bow {
-        top: 41vw;
+        top: 470px;
     }
     .name {
         font-size: 50px;
@@ -301,28 +370,36 @@
     button {
         font-size: 16px;
     }
-    section {
-        background-size: 83vw;
+    .background-img {
+        left: 8vw;
+        bottom: -178px;
+        width: 90vw;
     }
 }
 
 
 @media (max-width: 550px) {
-    .hero-container {
-        img {
-            width: 46vw;
-            left: 27vw;
-        }
+    section {
+        margin-top: 130px;
     }
     .bow {
-        top: 44vw;
+       top: 417px;
+    }
+    .background-img {
+        width: 90vw;
+        left: 8vw;
+        bottom: -158px;
+    }
+    .hero {
+        left: 27vw;
+        width: 250px;
     }
 }
 
 
 @media (max-width: 450px) {
     .bow {
-        top: 49vw;
+        top: 370px;
     }
     .name {
         font-size: 39px;
@@ -336,7 +413,7 @@
         margin-top: 13px;
     }
     .introduction-container-responsive {
-        bottom: -90px;
+        bottom: -318px;
     }
     .button-container {
         margin-top: 24px;
@@ -344,42 +421,42 @@
     .link-buttons-responsive {
         margin-top: 96px;
     }
+    section {
+        padding-top: 200px;
+    }
+    .hero {
+        width: 220px;
+    }
 }
 
 
 @media (max-width: 400px) {
-    .bow {
-        top: 53vw;
-    }
     .separator-atf {
         width: 56px;
     }
     .link-container {
         gap: 2.5rem;
     }
-    .hero-container {
-        img {
-            width: 48vw;
-            left: 27vw;
-        }
+    .hero {
+        left: 24vw;
     }
-    section {
-        background-size: 102vw;
+    .background-img {
+        left: 0;
+        bottom: -110px;
+        width: 96vw;
     }
+ 
 }
 
 
 @media (max-width: 360px) {
-    .bow {
-        top: 56vw;
+    .hero {
+        width: 200px;
     }
 }
 
 
 @media (max-width: 340px) {
-    section {
-        padding: 13% 0;
-    }
     .name {
         font-size: 36px;
         margin-bottom: -10px;

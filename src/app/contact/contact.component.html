@@ -1,50 +1,52 @@
-<section id="contact" class="position-relative">
-    <div class="d-flex align-items-center">
-        <div class="separator-contact"></div>
-        <h2>Contact</h2>
-    </div>
-    <div class="d-flex justify-content-between contact-container">
-        <div class="contact-subttitle-container">
-            <h3>Got a problem to solve?</h3>
-            <p>Contact me through this form, I am interested in hearing you, <br>
-                knowing your ideas and contributing to your projects with my work.
-            </p>
-            <p>Need a Frontend developer? <b>Contact me!</b></p>
+<section id="contact">
+    <div class="max-width auto position-relative">
+        <div class="d-flex align-items-center">
+            <div class="separator-contact"></div>
+            <h2>Contact</h2>
         </div>
-        <form (submit)="sendMail($event)" #myForm class="d-flex align-items-center flex-column">
-            <div class="input-container">
-                <div #divName class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
-                    <input #name type="text" placeholder="Your name" class="input-fields flex-grow-1" name="name">
-                    <img #imgName src="assets/img/check.svg" class="hidden">
-                </div>
-                <span #errorName class="error hidden">Your name is required</span>
+        <div class="d-flex justify-content-between contact-container">
+            <div class="contact-subttitle-container">
+                <h3>Got a problem to solve?</h3>
+                <p>Contact me through this form, I am interested in hearing you, <br>
+                    knowing your ideas and contributing to your projects with my work.
+                </p>
+                <p>Need a Frontend developer? <b>Contact me!</b></p>
             </div>
-
-            <div class="input-container">
-                <div #divMail class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
-                    <input name="mail" #mail type="email" placeholder="Your email" class="input-fields flex-grow-1">
-                    <img #imgMail class="hidden">
+            <form (submit)="sendMail($event)" #myForm class="d-flex align-items-center flex-column">
+                <div class="input-container">
+                    <div #divName class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
+                        <input #name type="text" placeholder="Your name" class="input-fields flex-grow-1" name="name">
+                        <img #imgName src="assets/img/check.svg" class="hidden">
+                    </div>
+                    <span #errorName class="error hidden">Your name is required</span>
                 </div>
-                <span #errorMail class="error hidden">Your email is required</span>
-            </div>
 
-            <div class="input-container">
-                <div #divMessage class="d-flex justify-content-between div-border rounded-3 div-textarea align-items-start">
-                    <textarea #message name="message" cols="30" rows="10" class="flex-grow-1" placeholder="Your message"></textarea>
-                    <img #imgMessage src="assets/img/check.svg" class="hidden">
+                <div class="input-container">
+                    <div #divMail class="div-border d-flex justify-content-between rounded-3 div-input align-items-center">
+                        <input name="mail" #mail type="email" placeholder="Your email" class="input-fields flex-grow-1">
+                        <img #imgMail class="hidden">
+                    </div>
+                    <span #errorMail class="error hidden">Your email is required</span>
                 </div>
-                <span #errorMessage class="error hidden">Your message is required</span>
-            </div> 
 
-            <div class="d-flex align-items-center div-checkbox">
-                <input required #checkbox class="checkbox" type="checkbox">
-                <span>I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</span>
-            </div>
-            <button #sendButton type="submit" disabled>Send message</button>
-        </form>
-    </div>
-    <img src="assets/img/background-footer.svg" class="footer-background position-absolute">
-    <div #overlay class="overlay position-fixed position-relative d-none">
-        <div #mailSent class="success"></div>
+                <div class="input-container">
+                    <div #divMessage class="d-flex justify-content-between div-border rounded-3 div-textarea align-items-start">
+                        <textarea #message name="message" cols="30" rows="10" class="flex-grow-1" placeholder="Your message"></textarea>
+                        <img #imgMessage src="assets/img/check.svg" class="hidden">
+                    </div>
+                    <span #errorMessage class="error hidden">Your message is required</span>
+                </div> 
+
+                <div class="d-flex align-items-center div-checkbox">
+                    <input required #checkbox class="checkbox" type="checkbox">
+                    <span>I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                </div>
+                <button #sendButton type="submit" disabled>Send message</button>
+            </form>
+        </div>
+        <img src="assets/img/background-footer.svg" class="footer-background position-absolute">
+        <div #overlay class="overlay position-fixed position-relative d-none">
+            <div #mailSent class="success"></div>
+        </div>
     </div>
 </section>

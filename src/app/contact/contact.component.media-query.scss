@@ -102,10 +102,6 @@
     .separator-contact {
         height: 4px;
     }
-    .footer-background {
-        width: 455px;
-        top: 406px;
-    }
 }
 
 @media (min-width: 981px) {
@@ -156,8 +152,7 @@
         margin-left: 16px;
     }
     .footer-background {
-        width: 230px;
-        top: 876px;
+        top: 460px;
     }
     button {
         &:active {

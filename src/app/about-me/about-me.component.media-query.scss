@@ -39,12 +39,14 @@
     .hero-profile {
       width: 350px;
     }
-    .about-me {
-      margin-left: 100px;
+
+    .first-container {
+      padding-left: 100px;
       p {
         font-size: 20px;
       }
     }
+
     .introduction {
       max-width: 500px;
       img {
@@ -62,7 +64,7 @@
     .hero-profile {
       width: 300px;
     }
-    .about-me {
+    .first-container {
       h1 {
         font-size: 90px;
       }
@@ -80,6 +82,9 @@
     .separator-about-me {
       width: 150px;
     }
+    .profile-background {
+      width: 500px;
+    }
   }
   
 
@@ -91,8 +96,8 @@
 
   
   @media (max-width: 980px) {
-    .about-me {
-      margin-top: 400px;
+    .first-container {
+      padding-top: 400px;
     }
     .separator-about-me {
       width: 100px;
@@ -105,16 +110,16 @@
       margin-right: 100px;
     }
     .profile-background {
-      width: 25vh;
-      top: -300px
+      display: none;
     }
+  
   }
   
 
   @media (max-width: 750px) {
-    .about-me {
-      margin-left: 50px;
-      margin-top: 340px;
+    .first-container {
+      padding-left: 50px;
+      padding-top: 340px;
       h1 {
         font-size: 64px;
       }
@@ -126,7 +131,7 @@
 
 
   @media (max-width: 600px) {
-    .about-me {
+    .first-container {
       h1 {
         font-size: 50px;
       }
@@ -141,9 +146,9 @@
 
 
   @media (max-width: 450px) {
-    .about-me {
-      margin-top: 260px;
-      margin-left: 25px;
+    .first-container {
+      padding-top: 260px;
+      padding-left: 25px;
       h1 {
         font-size: 39px;
       }
@@ -151,14 +156,12 @@
     .introduction {
       margin-right: 25px;
     }
-    .profile-background {
-      width: 19vh;
-    }
+   
   }
 
   
   @media (max-width: 450px) {
-    .about-me {
+    .first-container {
       h1 {
         font-size: 36px;
       }

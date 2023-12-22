@@ -1,3 +1,10 @@
+@media (max-width: 1920px) {
+    .separator-large {
+        width: 33vw;
+    }
+}
+
+
 @media (max-width: 1700px) {
     .projects-container {
         gap: 100px;
@@ -73,7 +80,8 @@
         height: 4px;
     }
     .portfolio-background-1 {
-        top: 38vw;
+        top: 525px;
+        width: 500px;
     }
     h2 {
         font-size: 90px;
@@ -86,8 +94,8 @@
             width: 450px;
         }
     }
-    .portfolio-background-1 {
-        width: 35vw;
+    .portfolio-background-2 {
+        width: 300px;
     }
     .select-button {
         padding: 6px 40px;
@@ -110,7 +118,8 @@
         gap: 3vw;
     }
     .portfolio-background-1 {
-        top: 83vw;
+       width: 370px;
+       top: 280px;
     }
 }
 
@@ -131,13 +140,6 @@
     .projects-container {
         margin: 70px 50px 0 50px;
     }
-    .portfolio-background-1 {
-        top: 150vw;
-        width: 50vw;
-    }
-    .portfolio-background-2 {
-        width: 46vw;
-    }
     .select-button {
         padding: 6px 32px;
         font-size: 18px;
@@ -145,6 +147,7 @@
     .filter-container {
         margin: 0 50px;
     }
+
 }
 
 
