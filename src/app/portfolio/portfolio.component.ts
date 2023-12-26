@@ -31,12 +31,20 @@ export class PortfolioComponent implements OnInit {
   
   notebooks = [
     {
+      image: 'laptop-dabubble.jpg',
+      title: 'DA Bubble',
+      description: 'Chat application inspired by Slack.',
+      tech: 'Angular | Typescript | Material Design | Firebase',
+      github: 'https://github.com/RaphaelJanka/dabubble',
+      projectLink: 'https://www.dabubble.raphael-janka.com',
+    },
+    {
       image: 'join.png',
       title: 'Join',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       tech: 'HTML | CSS | JavaScript | Bootstrap',
       github: 'https://github.com/RaphaelJanka/join',
-      projectLink: 'https://raphael-janka.com/Join/html/login.html',
+      projectLink: 'https://join.raphael-janka.com/html/login.html',
     },
     {
       image: 'sharkie.png',
@@ -44,7 +52,7 @@ export class PortfolioComponent implements OnInit {
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       tech: 'HTML | CSS | JavaScript',
       github: 'https://github.com/RaphaelJanka/Sharkie',
-      projectLink: 'https://raphael-janka.com/sharkie/index.html',
+      projectLink: 'https://sharkie.raphael-janka.com/index.html',
     },
     {
       image: 'pokedex.png',
@@ -52,16 +60,8 @@ export class PortfolioComponent implements OnInit {
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       tech: 'HTML | CSS | JavaScript | API',
       github: 'https://github.com/RaphaelJanka/pokedex',
-      projectLink: 'https://raphael-janka.com/pokedex/html/index.html',
-    },
-    {
-      image: 'website.png',
-      title: 'Personal Website',
-      description: 'Own personal website',
-      tech: 'Angular | Typescript | Bootstrap',
-      github: 'https://github.com/RaphaelJanka/raphael-janka',
-      projectLink: '',
-    },
+      projectLink: 'https://pokedex.raphael-janka.com/html/index.html',
+    }
   ];
 
 
